@@ -1,0 +1,811 @@
+/* Site styles — Research Culture Week 2026, Lancaster University.
+ * Verified against WCAG 2.1 AA contrast thresholds and tested down to a
+ * 320px viewport width. See README "Accessibility" for details.
+ */
+@import url("tokens.css");
+
+/* ---------------------------------------------------------------- */
+/* Reset / base                                                      */
+/* ---------------------------------------------------------------- */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+/* The hidden attribute must always win over any component's own `display`
+   rule — several components below set `display: flex`/`inline-flex`
+   unconditionally, which otherwise ties with the UA `[hidden]` rule at
+   equal specificity and (author beats UA) renders "hidden" elements anyway. */
+[hidden] { display: none !important; }
+
+html {
+  overflow-x: clip;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: clip;
+  margin: 0;
+  min-height: 100dvh;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  padding-inline: max(0px, env(safe-area-inset-left));
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+  min-width: 0;
+  color: var(--color-ink);
+  margin: 0;
+}
+
+p { margin: 0; }
+ul, dl { margin: 0; padding: 0; }
+img { max-width: 100%; display: block; }
+
+a { color: var(--color-accent); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 150ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 150ms !important;
+  }
+}
+
+/* ---------------------------------------------------------------- */
+/* Skip link                                                         */
+/* ---------------------------------------------------------------- */
+
+.skip-link {
+  position: absolute;
+  left: var(--space-md);
+  top: var(--space-md);
+  background: var(--color-ink);
+  color: var(--color-paper);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-sm);
+  z-index: var(--z-tooltip);
+  transform: translateY(-4rem);
+  transition: transform var(--dur-short) var(--ease-out);
+  font-family: var(--font-body);
+  text-decoration: none;
+}
+.skip-link:focus-visible {
+  transform: translateY(0);
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+/* ---------------------------------------------------------------- */
+/* Focus ring — global                                               */
+/* ---------------------------------------------------------------- */
+
+:focus { outline: none; }
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* ---------------------------------------------------------------- */
+/* Masthead (N6 Newspaper masthead)                                  */
+/* ---------------------------------------------------------------- */
+
+/* Masthead carries Lancaster Red as a solid banner — the university's own
+   guideline is to "always lead with red and grey before adding secondary
+   colours", so the primary brand colour gets the page's most prominent
+   surface rather than being confined to small button-sized accents. */
+.masthead {
+  padding-block-start: var(--space-xl);
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
+}
+.masthead__band {
+  padding-inline: clamp(1rem, 4vw, 3rem);
+}
+.masthead__inner {
+  max-width: 60rem;
+  margin-inline: auto;
+  text-align: center;
+}
+/* Eyebrow + wordmark are both spans inside one <h1> (see index.html) — a
+   paragraph sitting in front of the page's H1 was flagged in accessibility
+   review, and merging the two into a single heading also gives the page a
+   richer H1 accessible name ("Lancaster University Research Culture Week")
+   instead of a heading that's silent about which university this is. */
+.masthead__eyebrow {
+  display: block;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: color-mix(in oklch, var(--color-accent-ink) 78%, var(--color-accent));
+  margin-block-end: var(--space-xs);
+}
+.masthead__wordmark {
+  display: block;
+  font-size: clamp(2rem, 3vw + 1rem, var(--text-3xl));
+  letter-spacing: -0.01em;
+  color: var(--color-accent-ink);
+}
+.masthead__issue {
+  font-family: var(--font-outlier);
+  font-size: var(--text-sm);
+  letter-spacing: 0.08em;
+  color: color-mix(in oklch, var(--color-accent-ink) 82%, var(--color-accent));
+  margin-block-start: var(--space-sm);
+}
+.masthead__rule {
+  margin-block: var(--space-lg) 0;
+  border-top: 3px double color-mix(in oklch, var(--color-accent-ink) 45%, var(--color-accent));
+}
+.masthead__nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--space-sm) clamp(1rem, 4vw, 3rem);
+  background: var(--color-accent);
+}
+.masthead__nav .link-btn {
+  color: color-mix(in oklch, var(--color-accent-ink) 85%, var(--color-accent));
+  text-decoration-color: color-mix(in oklch, var(--color-accent-ink) 50%, var(--color-accent));
+}
+.masthead__nav .link-btn:hover {
+  color: var(--color-accent-ink);
+  text-decoration-color: var(--color-accent-ink);
+}
+/* The default focus ring (--color-focus) is close to Lancaster Red in both
+   lightness and hue — against this band's red background it computes to
+   ~1.15:1 contrast, effectively invisible. Every focusable element inside
+   the masthead needs a ring colour that actually shows up on red instead. */
+.masthead :focus-visible {
+  outline-color: var(--color-accent-ink);
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  padding: var(--space-2xs) var(--space-xs);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-ink-2);
+  text-decoration: underline;
+  text-decoration-color: var(--color-rule);
+  text-underline-offset: 3px;
+  cursor: pointer;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+.link-btn:hover {
+  color: var(--color-accent);
+  text-decoration-color: var(--color-accent);
+}
+
+/* ---------------------------------------------------------------- */
+/* Main / intro                                                       */
+/* ---------------------------------------------------------------- */
+
+main {
+  max-width: 78rem;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 3rem);
+  padding-block-end: var(--space-3xl);
+}
+
+.intro {
+  max-width: 42rem;
+  padding-block: var(--space-2xl) var(--space-lg);
+}
+.intro__tagline {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  line-height: 1.4;
+  color: var(--color-ink);
+}
+.intro__sub {
+  margin-block-start: var(--space-sm);
+  color: var(--color-ink-2);
+  max-width: 65ch;
+}
+
+/* ---------------------------------------------------------------- */
+/* Admin bar                                                         */
+/* ---------------------------------------------------------------- */
+
+.admin-bar {
+  background: var(--color-paper-3);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-md);
+  padding: var(--space-md) var(--space-lg);
+  margin-block-end: var(--space-xl);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  align-items: center;
+  justify-content: space-between;
+}
+.admin-bar__label {
+  color: var(--color-ink-2);
+  font-size: var(--text-sm);
+  max-width: 42ch;
+}
+.admin-bar__label code {
+  font-family: var(--font-outlier);
+  font-size: 0.9em;
+}
+.admin-bar__actions {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+/* ---------------------------------------------------------------- */
+/* Filters                                                            */
+/* ---------------------------------------------------------------- */
+
+.filters {
+  padding-block: var(--space-lg);
+  border-block: 1px solid var(--color-rule);
+  margin-block-end: var(--space-xl);
+}
+.filters__row {
+  display: flex;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+  margin-block-end: var(--space-lg);
+}
+.field--search { flex: 1 1 16rem; }
+.field--day { flex: 0 1 14rem; }
+
+.field { display: flex; flex-direction: column; gap: var(--space-2xs); }
+.field label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-ink);
+}
+.field__optional {
+  font-weight: 400;
+  color: var(--color-ink-2);
+}
+.field__helper {
+  font-size: var(--text-xs);
+  color: var(--color-ink-2);
+  min-height: 1lh;
+}
+.field__error {
+  font-size: var(--text-xs);
+  color: var(--color-error);
+  min-height: 1lh;
+}
+
+input[type="text"],
+input[type="search"],
+input[type="password"],
+input[type="url"],
+select,
+textarea {
+  height: 44px;
+  padding-inline: var(--space-sm);
+  padding-inline-end: var(--space-xl);
+  border: 1px solid var(--color-rule-2);
+  outline: 2px solid transparent;
+  outline-offset: 1px;
+  border-radius: var(--radius-sm);
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  transition: background-color var(--dur-short) var(--ease-out);
+}
+textarea { height: auto; padding-block: var(--space-xs); resize: vertical; min-height: 4.5rem; }
+input::placeholder, textarea::placeholder { color: var(--color-ink-2); opacity: 1; }
+input:hover, select:hover, textarea:hover { background: var(--color-paper-2); }
+input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--color-focus);
+  border-color: var(--color-ink-2);
+}
+input:disabled, select:disabled, textarea:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+input:invalid[aria-invalid="true"] { border-color: var(--color-error); }
+
+.theme-filter { border: none; margin: 0; padding: 0; }
+.theme-filter legend {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  padding: 0;
+  margin-block-end: var(--space-xs);
+}
+.theme-filter__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+.theme-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-xs) var(--space-md);
+  min-height: 44px;
+  border: 1px solid var(--color-rule-2);
+  border-radius: 999px;
+  font-size: var(--text-sm);
+  cursor: pointer;
+  background: var(--color-paper);
+  transition: background-color var(--dur-short) var(--ease-out), border-color var(--dur-short) var(--ease-out);
+}
+.theme-chip:has(input:checked) {
+  border-color: var(--color-ink-2);
+  background: var(--color-paper-2);
+}
+.theme-chip:has(input:focus-visible) {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+.theme-chip input {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.theme-chip__swatch {
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 50%;
+  flex: none;
+}
+.theme-chip[data-theme="gold"] .theme-chip__swatch { background: var(--theme-gold); }
+.theme-chip[data-theme="plum"] .theme-chip__swatch { background: var(--theme-plum); }
+.theme-chip[data-theme="teal"] .theme-chip__swatch { background: var(--theme-teal); }
+.theme-chip[data-theme="lightblue"] .theme-chip__swatch { background: var(--theme-lightblue); }
+.theme-chip[data-theme="coral"] .theme-chip__swatch { background: var(--theme-coral); }
+
+/* Theme key — spells out what each colour/short-name pair actually stands
+   for. The chips themselves stay short (one word) so they never wrap as a
+   clickable control; the full pillar names live here, as each card's theme
+   tag tooltip, and in the admin form's Theme dropdown. */
+.theme-key {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--space-lg);
+  row-gap: var(--space-2xs);
+  margin-block-start: var(--space-sm);
+  font-size: var(--text-xs);
+  color: var(--color-ink-2);
+}
+.theme-key li {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2xs);
+}
+.theme-key__swatch {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  flex: none;
+}
+.theme-key__swatch[data-theme="gold"] { background: var(--theme-gold); }
+.theme-key__swatch[data-theme="plum"] { background: var(--theme-plum); }
+.theme-key__swatch[data-theme="teal"] { background: var(--theme-teal); }
+.theme-key__swatch[data-theme="lightblue"] { background: var(--theme-lightblue); }
+.theme-key__swatch[data-theme="coral"] { background: var(--theme-coral); }
+
+.filters__count {
+  margin-block-start: var(--space-md);
+  font-size: var(--text-sm);
+  color: var(--color-ink-2);
+}
+
+/* ---------------------------------------------------------------- */
+/* Card grid                                                          */
+/* ---------------------------------------------------------------- */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+  gap: var(--space-lg);
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-md);
+  background: var(--color-paper-2);
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(8px);
+  animation: card-reveal var(--dur-long) var(--ease-out) forwards;
+  /* Cap the stagger regardless of grid size — with 20 cards, an uncapped
+     per-card delay would push total settle time past ~1s. */
+  animation-delay: calc(min(var(--i, 0), 8) * 20ms);
+}
+@keyframes card-reveal {
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .event-card { animation-duration: 150ms; animation-delay: 0ms !important; }
+}
+.event-card.is-filtered-out { display: none; }
+.event-card.is-filter-fading {
+  transition: opacity var(--dur-short) var(--ease-in);
+  opacity: 0;
+}
+
+.event-card__body {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+.event-card__time {
+  font-family: var(--font-outlier);
+  font-size: var(--text-xs);
+  letter-spacing: 0.04em;
+  color: var(--color-ink-2);
+  text-transform: uppercase;
+}
+.event-card__title {
+  font-size: var(--text-md);
+  line-height: 1.3;
+}
+.event-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+  font-size: var(--text-sm);
+}
+.event-card__meta-row {
+  display: flex;
+  gap: var(--space-2xs);
+}
+.event-card__meta-row:empty,
+.event-card__meta-row[hidden] { display: none; }
+/* Plain <p> + labelled <span>s, not <dl>/<dt>/<dd> — a definition list here
+   caused screen readers to announce each value twice (once as the dd's own
+   text, once via the browser's definition-list role exposure). No such
+   ambiguity with plain inline text. */
+.event-card__meta-label {
+  color: var(--color-ink-2);
+  flex: none;
+}
+.event-card__meta-value { color: var(--color-ink); }
+
+.event-card__actions {
+  margin-block-start: auto;
+  padding-block-start: var(--space-sm);
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+/* Theme tags — one small pill per Research Culture pillar this session
+   addresses (a session can carry more than one). Matches the filter chips'
+   visual language. Deliberately NOT a full-width band: Lancaster Red/Grey
+   are the site's brand identity and should read as dominant, so the
+   categorisation colours are kept to small accents per card rather than a
+   large fill competing for attention. The full pillar name lives here (as
+   each pill's tooltip/accessible name), in the "Theme" key under the filter
+   bar, and in the admin form. */
+.event-card__theme {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xs);
+  margin: var(--space-md) var(--space-md) 0;
+}
+.theme-pill {
+  padding: var(--space-3xs) var(--space-sm);
+  border-radius: 999px;
+  color: var(--theme-ink);
+  font-weight: 600;
+  font-size: var(--text-xs);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+.theme-pill[data-theme="gold"] { background: var(--theme-gold); }
+.theme-pill[data-theme="plum"] { background: var(--theme-plum); }
+.theme-pill[data-theme="teal"] { background: var(--theme-teal); }
+.theme-pill[data-theme="lightblue"] { background: var(--theme-lightblue); }
+.theme-pill[data-theme="coral"] { background: var(--theme-coral); }
+/* Plum is dark enough (relative luminance) that dark text on it only reaches
+   2.61:1 — well under the 4.5:1 body-text minimum. Every other fill takes
+   --theme-ink (set on .theme-pill above) and passes comfortably; plum alone
+   needs light text instead. */
+.theme-pill[data-theme="plum"] { color: var(--color-accent-ink); }
+
+.empty-state {
+  padding: var(--space-2xl) var(--space-lg);
+  text-align: center;
+  color: var(--color-ink-2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+/* ---------------------------------------------------------------- */
+/* Buttons                                                            */
+/* ---------------------------------------------------------------- */
+
+.btn-primary, .btn-secondary, .btn-ghost, .btn-register {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  min-height: 44px;
+  padding-inline: var(--space-md);
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color var(--dur-short) var(--ease-out),
+              transform 100ms var(--ease-out),
+              border-color var(--dur-short) var(--ease-out);
+}
+.btn-primary, .btn-register:not([aria-disabled="true"]) {
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
+}
+.btn-primary:hover, .btn-register:not([aria-disabled="true"]):hover {
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+.btn-primary:active, .btn-register:not([aria-disabled="true"]):active { transform: translateY(1px); }
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-ink);
+  border-color: var(--color-ink-2);
+}
+.btn-secondary:hover { background: var(--color-paper-3); }
+.btn-secondary:active { transform: translateY(1px); }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--color-ink-2);
+  border-color: var(--color-rule-2);
+}
+.btn-ghost:hover { color: var(--color-ink); border-color: var(--color-ink-2); }
+.btn-ghost:active { transform: translateY(1px); }
+
+/* aria-disabled, not the native disabled attribute — a natively-disabled
+   button is pulled out of the tab order entirely, which meant every card
+   without a live LibCal link (18 of 20) had zero focusable content and was
+   silently skipped by keyboard/screen-reader Tab navigation. aria-disabled
+   keeps it reachable and announced as disabled, just not activatable. */
+.btn-register[aria-disabled="true"] {
+  background: var(--color-paper-3);
+  color: var(--color-ink-2);
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+button:disabled, button[aria-disabled="true"], a[aria-disabled="true"] { cursor: not-allowed; }
+
+/* ---------------------------------------------------------------- */
+/* Dialogs                                                            */
+/* ---------------------------------------------------------------- */
+
+dialog {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  height: fit-content;
+  max-height: min(85vh, 42rem);
+  width: min(90vw, 32rem);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+  background: var(--color-paper-2);
+  color: var(--color-ink);
+  overflow-y: auto;
+  opacity: 0;
+  transform: scale(0.96);
+  transition: opacity var(--dur-long) var(--ease-out), transform var(--dur-long) var(--ease-out);
+}
+dialog[open] { opacity: 1; transform: scale(1); }
+dialog::backdrop {
+  background: var(--color-backdrop);
+}
+@media (prefers-reduced-motion: reduce) {
+  dialog { transition: opacity 150ms linear; transform: none; }
+}
+
+#event-dialog { width: min(92vw, 40rem); }
+
+dialog h2 {
+  font-size: var(--text-lg);
+  margin-block-end: var(--space-sm);
+}
+.dialog__note {
+  font-size: var(--text-sm);
+  color: var(--color-ink-2);
+  margin-block-end: var(--space-lg);
+}
+dialog .field { margin-block-end: var(--space-md); }
+.event-theme-picker {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.event-theme-picker legend {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-ink);
+  padding: 0;
+  margin-block-end: var(--space-xs);
+}
+.event-theme-picker__option {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  min-height: 44px;
+  font-size: var(--text-base);
+  font-weight: 400;
+  color: var(--color-ink);
+  cursor: pointer;
+}
+.event-theme-picker__option input {
+  flex: none;
+  width: 1.125rem;
+  height: 1.125rem;
+}
+.event-theme-picker__option input:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+.field-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr));
+  gap: var(--space-md);
+}
+.dialog__actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-sm);
+  margin-block-start: var(--space-lg);
+}
+
+/* ---------------------------------------------------------------- */
+/* Toast                                                              */
+/* ---------------------------------------------------------------- */
+
+.toast-region {
+  position: fixed;
+  bottom: var(--space-lg);
+  right: var(--space-lg);
+  z-index: var(--z-toast);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  max-width: min(90vw, 24rem);
+}
+.toast {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  padding: var(--space-md) var(--space-lg);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  animation: toast-in var(--dur-long) var(--ease-out) forwards;
+}
+.toast--error { background: var(--color-error); }
+.toast.is-leaving {
+  animation: toast-out calc(var(--dur-long) * 0.75) var(--ease-in) forwards;
+}
+@keyframes toast-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes toast-out { to { opacity: 0; transform: translateY(8px); } }
+.toast__undo {
+  background: none;
+  border: none;
+  color: var(--color-accent-2);
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  min-height: 44px;
+}
+
+/* ---------------------------------------------------------------- */
+/* Footer (Ft1 Mast-headed)                                          */
+/* ---------------------------------------------------------------- */
+
+/* Dark Grey band, mirroring the Red masthead — brackets the page in
+   Lancaster's two lead brand colours (per their own guideline: "always
+   lead with red and grey before adding secondary colours"). */
+.site-footer {
+  background: var(--color-muted);
+  color: var(--color-muted-ink);
+  padding-block: var(--space-2xl) var(--space-lg);
+}
+.site-footer__band {
+  max-width: 60rem;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 3rem);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-md) var(--space-xl);
+}
+.site-footer__wordmark {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-muted-ink);
+}
+.site-footer__tagline {
+  color: color-mix(in oklch, var(--color-muted-ink) 82%, var(--color-muted));
+  flex: 1 1 16rem;
+}
+.site-footer__links {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: center;
+}
+.site-footer__links a {
+  color: color-mix(in oklch, var(--color-muted-ink) 85%, var(--color-muted));
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.site-footer__links a:hover { color: var(--color-muted-ink); }
+.site-footer .link-btn { color: color-mix(in oklch, var(--color-muted-ink) 85%, var(--color-muted)); }
+.site-footer .link-btn:hover { color: var(--color-muted-ink); }
+.site-footer :focus-visible { outline-color: var(--color-muted-ink); }
+.site-footer__meta {
+  max-width: 60rem;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 3rem);
+  margin-block-start: var(--space-lg);
+  padding-block-start: var(--space-lg);
+  border-top: 1px solid color-mix(in oklch, var(--color-muted-ink) 30%, var(--color-muted));
+}
+.site-footer__meta p {
+  font-size: var(--text-xs);
+  color: color-mix(in oklch, var(--color-muted-ink) 75%, var(--color-muted));
+}
+
+/* ---------------------------------------------------------------- */
+/* Admin-only visibility                                              */
+/* ---------------------------------------------------------------- */
+
+.admin-only { display: none; }
+body.is-admin .admin-only { display: inline-flex; }
+
+/* ---------------------------------------------------------------- */
+/* Responsive                                                         */
+/* ---------------------------------------------------------------- */
+
+@media (max-width: 40rem) {
+  .masthead__nav { justify-content: center; }
+  .filters__row { flex-direction: column; }
+  .field--day { flex-basis: auto; }
+  .admin-bar { flex-direction: column; align-items: stretch; }
+  .admin-bar__actions { justify-content: stretch; }
+  .admin-bar__actions button { flex: 1 1 auto; }
+  .site-footer__band { flex-direction: column; align-items: flex-start; }
+}
+
+@media (min-width: 60rem) {
+  .card-grid { grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr)); }
+}

@@ -1,0 +1,120 @@
+/* Design tokens — Research Culture Week 2026, Lancaster University.
+ * Palette anchored on Lancaster's official brand colours (Red, Dark Grey,
+ * Orange), sourced from the university's public brand guidelines.
+ * Display face: Bitter (free stand-in for the licensed Lexia). Body face:
+ * Switzer (free stand-in for the licensed Aktiv Grotesk). See README for
+ * details on swapping in the real licensed fonts if available.
+ */
+
+:root {
+  /* ---- Brand reference swatches (Lancaster University official palette, pinned exact) ---- */
+  --lancaster-red:     #B5121B;
+  --lancaster-grey:     #555656;
+  --lancaster-orange:  #FD9029;
+
+  /* ---- Paper (warm-tinted off-white, never pure #fff) ---- */
+  --color-paper:    oklch(95%   0.010 30);
+  --color-paper-2:  oklch(98.5% 0.006 30);
+  --color-paper-3:  oklch(90%   0.014 30);
+
+  /* ---- Ink ---- */
+  --color-ink:      oklch(19% 0.014 26);
+  --color-ink-2:    oklch(38% 0.012 26);
+
+  /* ---- Rules / neutrals ---- */
+  --color-rule:     oklch(80% 0.012 30);
+  --color-rule-2:   oklch(88% 0.008 30);
+  --color-neutral:  oklch(52% 0.012 26);
+  /* Lancaster's official Dark Grey (#555656) is near-zero chroma; warm-tinted
+     by +0.010 here (imperceptible vs. the source swatch) so it isn't a flat
+     grey in the working palette. The literal brand hex stays available as
+     --lancaster-grey above for citation. */
+  --color-muted:      oklch(45% 0.010 26);
+  --color-muted-ink:  var(--color-paper-2); /* light text on a --color-muted fill, e.g. the footer band */
+
+  /* ---- Accent (Lancaster Red, official) ---- */
+  --color-accent:      var(--lancaster-red);
+  --color-accent-ink:  oklch(98% 0.006 30); /* light text on accent fill */
+  --color-focus:       oklch(54% 0.20 26);
+  --color-accent-2:    var(--lancaster-orange); /* sparing highlight only, per brand guideline */
+
+  /* ---- Semantic ---- */
+  --color-error:    oklch(52% 0.20 18);
+  --color-success:  oklch(50% 0.12 145);
+
+  /* ---- Event theme colours (from source programme spreadsheet — a distinct
+     categorisation system, never used for site chrome) ----
+     Each fill's luminance differs, so each needs its OWN text-colour pairing
+     verified against WCAG 4.5:1 (not one blanket rule) — see README "Theme
+     colours" for the exact contrast numbers. Teal is lightened from the
+     spreadsheet's literal #008878 to #31A08F because the original was too
+     dark for dark text (3.94:1) and too light for light text (4.38:1) to
+     clear 4.5:1 either way; this shade clears it with dark text at 5.79:1. */
+  --theme-gold:       #FFC000;
+  --theme-plum:       #8A3E65;
+  --theme-teal:       #31A08F;
+  --theme-lightblue:  #7FAABE;
+  --theme-coral:      #FF7372;
+  /* Fixed (never flips with colour scheme). Default overlay text for theme
+     fills — correct for gold/teal/lightblue/coral. Plum is dark enough that
+     it needs LIGHT text instead; see the per-theme override in styles.css. */
+  --theme-ink:        oklch(19% 0.014 26);
+
+  /* ---- Fonts ---- */
+  --font-display: "Bitter", ui-serif, Georgia, serif;
+  --font-body:    "Switzer", ui-sans-serif, system-ui, sans-serif;
+  --font-outlier: "Geist Mono", ui-monospace, monospace;
+
+  /* ---- Type scale (1.25 ratio) ---- */
+  --text-xs:   0.64rem;
+  --text-sm:   0.8rem;
+  --text-base: 1rem;
+  --text-md:   1.25rem;
+  --text-lg:   1.5625rem;
+  --text-xl:   1.9531rem;
+  --text-2xl:  2.4414rem;
+  --text-3xl:  3.0518rem;
+  --text-display: clamp(2.25rem, 3.5vw + 1rem, 3.75rem);
+
+  /* ---- Spacing (4pt scale) ---- */
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs:  0.5rem;
+  --space-sm:  0.75rem;
+  --space-md:  1rem;
+  --space-lg:  1.5rem;
+  --space-xl:  2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+
+  /* ---- Radius ---- */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+
+  /* ---- Motion ---- */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:     cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long:  420ms;
+
+  /* ---- Overlays ---- */
+  --color-backdrop: color-mix(in oklch, var(--color-ink) 45%, transparent);
+
+  /* ---- Z-index scale ---- */
+  --z-base:     1;
+  --z-raised:   10;
+  --z-dropdown: 100;
+  --z-sticky:   200;
+  --z-modal:    400;
+  --z-toast:    500;
+  --z-tooltip:  600;
+
+  /* Always light, regardless of OS/browser dark-mode preference — this is a
+     branded university page with one deliberate palette, not a dark-mode-
+     aware app. Without this, native form controls (select, checkbox) would
+     still render with dark-mode chrome even though every custom colour here
+     stays light. */
+  color-scheme: light;
+}

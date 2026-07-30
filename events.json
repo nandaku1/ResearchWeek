@@ -1,0 +1,302 @@
+[
+  {
+    "id": "monday-s1",
+    "day": "monday",
+    "dayLabel": "Monday 28th September",
+    "slot": "Session One",
+    "time": "09:30–11:00",
+    "title": "RCW Welcome & ReCAP 2024-2028 Progress Update",
+    "chair": "Professor Rebecca Lingwood, DVC and Professor Nick Race, Director Research Culture",
+    "speakers": "Researcher Development Panel: Elizabeth Adams, Scafell Coaching (Chair) Corinna PB, ECR, MCR, Technician, Professor, RES Prof.",
+    "location": "Margaret Fell Lecture Theatre",
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4571657",
+    "themes": [
+      "gold"
+    ]
+  },
+  {
+    "id": "tuesday-s1",
+    "day": "tuesday",
+    "dayLabel": "Tuesday 29th September",
+    "slot": "Session One",
+    "time": "09:30–11:00",
+    "title": "SPRE ILS Workshop/Consultation",
+    "chair": "Professor Jo Rycroft-Malone, Pro-Vice Chancellor Research and Enterprise Opening, Professor Leon Cruickshank Facilitating",
+    "speakers": "Becky Gordon, Head of Research Quality and Policy",
+    "location": "Management School (TBD)",
+    "libcalUrl": null,
+    "themes": [
+      "gold"
+    ]
+  },
+  {
+    "id": "wednesday-s1",
+    "day": "wednesday",
+    "dayLabel": "Wednesday 30th September",
+    "slot": "Session One",
+    "time": "09:30–11:00",
+    "title": "Launch of EDI Research Hub",
+    "chair": "Professor Kendi Guantai, Dean Culture and Inclusion",
+    "speakers": "Panel TBD - Sophie, Chris, Sunita",
+    "location": "Library Engagement Space",
+    "libcalUrl": null,
+    "themes": [
+      "plum"
+    ]
+  },
+  {
+    "id": "thursday-s1",
+    "day": "thursday",
+    "dayLabel": "Thursday 1st October",
+    "slot": "Session One",
+    "time": "09:30–11:00",
+    "title": "PGR Consultation?",
+    "chair": "Professor Corinna Peniston Bird, Cross-Faculty Dean for Postgraduate Studies",
+    "speakers": "Margriet Groen + Debbie Costain (Sense of Belonging work)",
+    "location": "TBD",
+    "libcalUrl": null,
+    "themes": [
+      "plum"
+    ]
+  },
+  {
+    "id": "monday-s2",
+    "day": "monday",
+    "dayLabel": "Monday 28th September",
+    "slot": "Session Two",
+    "time": "11:00–12:00",
+    "title": "Reimagining Research Practices (RRP) Showcase",
+    "chair": "Professor Rebecca Lingwood, DVC",
+    "speakers": "Becky Gordon, Cat Gold, Carlos Lopez-Galviz, Mark Levine, Phil Barker",
+    "location": "Margaret Fell Lecture Theatre",
+    "libcalUrl": null,
+    "themes": [
+      "teal"
+    ]
+  },
+  {
+    "id": "tuesday-s2",
+    "day": "tuesday",
+    "dayLabel": "Tuesday 29th September",
+    "slot": "Session Two",
+    "time": "11:00–12:00",
+    "title": "Cuppa Conundrum: Navigating Emotionally Distressing Research",
+    "chair": "",
+    "speakers": "Dan Craddock",
+    "location": "Library Engagement Space",
+    "libcalUrl": null,
+    "themes": [
+      "plum"
+    ]
+  },
+  {
+    "id": "wednesday-s2",
+    "day": "wednesday",
+    "dayLabel": "Wednesday 30th September",
+    "slot": "Session Two",
+    "time": "11:00–12:00",
+    "title": "Idea Lab: Creating Safe Spaces for Early-Stage Research Ideas and Collaboration",
+    "chair": "",
+    "speakers": "Elsahn Ziad, Simone Corsi, Sarah Jack",
+    "location": "Library Engagement Space",
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4571751",
+    "themes": [
+      "lightblue"
+    ]
+  },
+  {
+    "id": "thursday-s2",
+    "day": "thursday",
+    "dayLabel": "Thursday 1st October",
+    "slot": "Session Two",
+    "time": "11:00–12:00",
+    "title": "Cuppa Conundrum: Research Integrity Dilemmas",
+    "chair": "",
+    "speakers": "Dan Craddock",
+    "location": "Library Engagement Space",
+    "libcalUrl": null,
+    "themes": [
+      "teal"
+    ]
+  },
+  {
+    "id": "monday-lunch",
+    "day": "monday",
+    "dayLabel": "Monday 28th September",
+    "slot": "Lunchtime Session",
+    "time": "12:00–13:00",
+    "title": "Lunch in MF Foyer. In MF Lecture Theatre - Participatory (and Policy) Research Showcase",
+    "chair": "N/A",
+    "speakers": "Jess Shaw (and Janine Bickerstaff?)",
+    "location": "Margaret Fell Lecture Theatre",
+    "libcalUrl": null,
+    "themes": [
+      "gold"
+    ]
+  },
+  {
+    "id": "tuesday-lunch",
+    "day": "tuesday",
+    "dayLabel": "Tuesday 29th September",
+    "slot": "Lunchtime Session",
+    "time": "12:00–13:00",
+    "title": "Imagination Mixer",
+    "chair": "",
+    "speakers": "Joe Lindley",
+    "location": "A36 Imagination Lab, LICA",
+    "libcalUrl": null,
+    "themes": [
+      "lightblue"
+    ]
+  },
+  {
+    "id": "wednesday-lunch",
+    "day": "wednesday",
+    "dayLabel": "Wednesday 30th September",
+    "slot": "Lunchtime Session",
+    "time": "12:00–13:00",
+    "title": "PRISMS Research Culture Cafe",
+    "chair": "",
+    "speakers": "Amy Mayfield",
+    "location": "TBD",
+    "libcalUrl": null,
+    "themes": [
+      "coral"
+    ]
+  },
+  {
+    "id": "thursday-lunch",
+    "day": "thursday",
+    "dayLabel": "Thursday 1st October",
+    "slot": "Lunchtime Session",
+    "time": "12:00–13:00",
+    "title": "How can Lancaster University campus be a testbed for your research? How can we better embed research in our spending?",
+    "chair": "",
+    "speakers": "Zoe Detko",
+    "location": "Library Engagement Space",
+    "libcalUrl": null,
+    "themes": [
+      "lightblue"
+    ]
+  },
+  {
+    "id": "monday-s3",
+    "day": "monday",
+    "dayLabel": "Monday 28th September",
+    "slot": "Session Three",
+    "time": "13:00–14:00",
+    "title": "British Academy ECR Network: Introducing the Network and the opportunities it offers to ECRs working across SHAPE research.",
+    "chair": "Professor Suzanne Ost or Dr Leonie Smith",
+    "speakers": "Pam Forster",
+    "location": "Library Engagement Space",
+    "libcalUrl": null,
+    "themes": [
+      "plum"
+    ]
+  },
+  {
+    "id": "tuesday-s3",
+    "day": "tuesday",
+    "dayLabel": "Tuesday 29th September",
+    "slot": "Session Three",
+    "time": "13:00–14:00",
+    "title": "How can we improve promotions and wellbeing?",
+    "chair": "",
+    "speakers": "Olivia Carter",
+    "location": "POE Training Rooms (TBC)",
+    "libcalUrl": null,
+    "themes": [
+      "coral"
+    ]
+  },
+  {
+    "id": "wednesday-s3",
+    "day": "wednesday",
+    "dayLabel": "Wednesday 30th September",
+    "slot": "Session Three",
+    "time": "13:00–14:00",
+    "title": "Writing Retreats - Creating Space for Sociable Solitary Work",
+    "chair": "",
+    "speakers": "Chris Atkinson",
+    "location": "Library Engagement Space",
+    "libcalUrl": null,
+    "themes": [
+      "coral"
+    ]
+  },
+  {
+    "id": "thursday-s3",
+    "day": "thursday",
+    "dayLabel": "Thursday 1st October",
+    "slot": "Session Three",
+    "time": "13:00–14:00",
+    "title": "Community-Centred Research in Practice: Exploring Reflective Prompts",
+    "chair": "",
+    "speakers": "Nuri Kwon",
+    "location": "Library Engagement Space",
+    "libcalUrl": null,
+    "themes": [
+      "plum"
+    ]
+  },
+  {
+    "id": "monday-s4",
+    "day": "monday",
+    "dayLabel": "Monday 28th September",
+    "slot": "Session Four",
+    "time": "14:00–15:30",
+    "title": "Combined Proposal 1) Open Research, Open People: Wellbeing as Infrastructure in Universities and 2) DMPs 4 Research Integrity: Revisiting and Deepening what we include in Data Management Plans",
+    "chair": "",
+    "speakers": "Tom Morley, Joanne Fitzpatrick and Jess Shaw",
+    "location": "Library Engagement Space",
+    "libcalUrl": null,
+    "themes": [
+      "teal"
+    ]
+  },
+  {
+    "id": "tuesday-s4",
+    "day": "tuesday",
+    "dayLabel": "Tuesday 29th September",
+    "slot": "Session Four",
+    "time": "14:00–15:30",
+    "title": "Embedding Equality, Diversity and Inclusion into Grant Applications - Exploring How to Do Better",
+    "chair": "",
+    "speakers": "Jess Shaw, Odette Dewhurst, Chris Atkinson",
+    "location": "TBC",
+    "libcalUrl": null,
+    "themes": [
+      "teal"
+    ]
+  },
+  {
+    "id": "wednesday-s4",
+    "day": "wednesday",
+    "dayLabel": "Wednesday 30th September",
+    "slot": "Session Four",
+    "time": "14:00–15:30",
+    "title": "How we can improve recruitment and redeployment?",
+    "chair": "",
+    "speakers": "Olivia Carter",
+    "location": "POE Training Rooms (TBC)",
+    "libcalUrl": null,
+    "themes": [
+      "coral"
+    ]
+  },
+  {
+    "id": "thursday-s4",
+    "day": "thursday",
+    "dayLabel": "Thursday 1st October",
+    "slot": "Session Four",
+    "time": "14:00–15:30",
+    "title": "AI in Research: Ethics, Opportunities and Emerging Governance (Panel Discussion?)",
+    "chair": "",
+    "speakers": "Tao + Odette Dewhurst, DSAIL (Chris Nemeth), Yvonne Fox? Guillermo (FHM)?",
+    "location": "",
+    "libcalUrl": null,
+    "themes": [
+      "teal"
+    ]
+  }
+]

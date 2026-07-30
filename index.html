@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Research Culture Week 2026 · Lancaster University</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Programme and registration for Lancaster University's Research Culture Week, 28 September – 1 October 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://api.fontshare.com">
+<!-- Free lookalikes for Lancaster's licensed brand faces (Lexia slab serif + Aktiv Grotesk):
+     Bitter (slab serif, same "gravitas and authority" heading role) + Switzer (neutral
+     grotesque sans, same broad-weight-range body role). Swap for the real Lexia/Aktiv
+     Grotesk webfont kit if the university licenses them for this site. -->
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="masthead" role="banner">
+  <div class="masthead__band">
+    <div class="masthead__inner">
+      <h1 class="masthead__heading">
+        <span class="masthead__eyebrow">Lancaster University</span>
+        <span class="masthead__wordmark">Research Culture Week</span>
+      </h1>
+      <p class="masthead__issue">28 September&nbsp;–&nbsp;1 October 2026</p>
+    </div>
+  </div>
+  <div class="masthead__rule" aria-hidden="true"></div>
+  <div class="masthead__nav">
+    <button id="admin-toggle" class="link-btn" type="button" aria-haspopup="dialog" aria-controls="login-dialog">
+      Admin login
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="intro">
+    <h2 class="intro__tagline">Twenty sessions, four days, one shared conversation about how we do research at Lancaster.</h2>
+    <p class="intro__sub">Browse the programme below, filter by day or theme, and register for each session through LibCal.</p>
+  </section>
+
+  <section class="admin-bar" id="admin-bar" hidden>
+    <p class="admin-bar__label">Admin mode — changes are staged in this browser until you download and publish <code>events.json</code>.</p>
+    <div class="admin-bar__actions">
+      <button id="add-event-btn" type="button" class="btn-primary">Add event</button>
+      <button id="download-btn" type="button" class="btn-secondary">Download events.json</button>
+      <button id="logout-btn" type="button" class="btn-ghost">Log out</button>
+    </div>
+  </section>
+
+  <section class="filters" aria-label="Filter the programme">
+    <div class="filters__row">
+      <div class="field field--search">
+        <label for="search-input">Search</label>
+        <input type="search" id="search-input" placeholder="Title, speaker, location…" autocomplete="off">
+      </div>
+      <div class="field field--day">
+        <label for="day-select">Day</label>
+        <select id="day-select">
+          <option value="">All days</option>
+          <option value="monday">Monday 28 Sept</option>
+          <option value="tuesday">Tuesday 29 Sept</option>
+          <option value="wednesday">Wednesday 30 Sept</option>
+          <option value="thursday">Thursday 1 Oct</option>
+        </select>
+      </div>
+    </div>
+
+    <fieldset class="theme-filter">
+      <legend>Theme</legend>
+      <div class="theme-filter__chips">
+        <label class="theme-chip" data-theme="gold">
+          <input type="checkbox" value="gold" checked aria-label="Additional theme — name to confirm"><span class="theme-chip__swatch" aria-hidden="true"></span>Additional theme
+        </label>
+        <label class="theme-chip" data-theme="plum">
+          <input type="checkbox" value="plum" checked aria-label="Sustaining a Supportive and Inclusive Environment"><span class="theme-chip__swatch" aria-hidden="true"></span>Inclusion
+        </label>
+        <label class="theme-chip" data-theme="teal">
+          <input type="checkbox" value="teal" checked aria-label="Ensuring the Integrity of our Research"><span class="theme-chip__swatch" aria-hidden="true"></span>Integrity
+        </label>
+        <label class="theme-chip" data-theme="lightblue">
+          <input type="checkbox" value="lightblue" checked aria-label="Enabling Research Opportunities through Collaboration and Innovation"><span class="theme-chip__swatch" aria-hidden="true"></span>Collaboration
+        </label>
+        <label class="theme-chip" data-theme="coral">
+          <input type="checkbox" value="coral" checked aria-label="Recognising and Developing our Research Community"><span class="theme-chip__swatch" aria-hidden="true"></span>Recognition
+        </label>
+      </div>
+      <ul class="theme-key">
+        <li><span class="theme-key__swatch" data-theme="gold" aria-hidden="true"></span>Additional theme — name to confirm</li>
+        <li><span class="theme-key__swatch" data-theme="plum" aria-hidden="true"></span>Sustaining a Supportive and Inclusive Environment</li>
+        <li><span class="theme-key__swatch" data-theme="teal" aria-hidden="true"></span>Ensuring the Integrity of our Research</li>
+        <li><span class="theme-key__swatch" data-theme="lightblue" aria-hidden="true"></span>Enabling Research Opportunities through Collaboration and Innovation</li>
+        <li><span class="theme-key__swatch" data-theme="coral" aria-hidden="true"></span>Recognising and Developing our Research Community</li>
+      </ul>
+    </fieldset>
+
+    <p class="filters__count" id="results-count"></p>
+  </section>
+
+  <section class="grid-wrap" aria-label="Programme sessions">
+    <div class="card-grid" id="card-grid"></div>
+    <div class="empty-state" id="empty-state" hidden>
+      <p>No sessions match your filters.</p>
+      <button type="button" id="clear-filters" class="btn-secondary">Clear filters</button>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__band">
+    <p class="site-footer__wordmark">Research Culture Week</p>
+    <p class="site-footer__tagline">Part of Lancaster University's Research Culture programme.</p>
+    <nav class="site-footer__links" aria-label="Footer">
+      <a href="https://www.lancaster.ac.uk">lancaster.ac.uk</a>
+      <button id="admin-toggle-footer" class="link-btn" type="button" aria-haspopup="dialog" aria-controls="login-dialog">Admin login</button>
+    </nav>
+  </div>
+  <div class="site-footer__meta">
+    <p>Lancaster University, Bailrigg, Lancaster LA1 4YW · © 2026 Lancaster University</p>
+  </div>
+</footer>
+
+<!-- Admin login dialog -->
+<dialog id="login-dialog" aria-labelledby="login-dialog-title">
+  <form id="login-form" novalidate>
+    <h2 id="login-dialog-title">Admin login</h2>
+    <p class="dialog__note">This gate only hides the edit tools from casual visitors — it is not secure authentication. Anyone who views this page's source can read the credentials.</p>
+    <div class="field">
+      <label for="login-username">Username</label>
+      <input type="text" id="login-username" autocomplete="username" required>
+    </div>
+    <div class="field">
+      <label for="login-password">Password</label>
+      <input type="password" id="login-password" autocomplete="current-password" required>
+      <p class="field__error" id="login-error" role="alert"></p>
+    </div>
+    <div class="dialog__actions">
+      <button type="button" class="btn-ghost" data-close-dialog>Cancel</button>
+      <button type="submit" class="btn-primary">Log in</button>
+    </div>
+  </form>
+</dialog>
+
+<!-- Add / edit event dialog -->
+<dialog id="event-dialog" aria-labelledby="event-dialog-title">
+  <form id="event-form" novalidate>
+    <h2 id="event-dialog-title">Add event</h2>
+    <input type="hidden" id="event-id">
+
+    <div class="field-row">
+      <div class="field">
+        <label for="event-day">Day</label>
+        <input type="text" id="event-day" list="day-options" required>
+        <datalist id="day-options">
+          <option value="Monday 28th September">
+          <option value="Tuesday 29th September">
+          <option value="Wednesday 30th September">
+          <option value="Thursday 1st October">
+        </datalist>
+      </div>
+      <div class="field">
+        <label for="event-slot">Session</label>
+        <input type="text" id="event-slot" list="slot-options" required>
+        <datalist id="slot-options">
+          <option value="Session One">
+          <option value="Session Two">
+          <option value="Lunchtime Session">
+          <option value="Session Three">
+          <option value="Session Four">
+        </datalist>
+      </div>
+      <div class="field">
+        <label for="event-time">Time</label>
+        <input type="text" id="event-time" placeholder="09:30–11:00" required>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="event-title">Title</label>
+      <input type="text" id="event-title" required>
+    </div>
+
+    <fieldset class="field event-theme-picker">
+      <legend>Themes <span class="field__optional">(a session can address more than one)</span></legend>
+      <label class="event-theme-picker__option">
+        <input type="checkbox" name="event-theme-checkbox" value="gold">
+        Additional theme — name to confirm
+      </label>
+      <label class="event-theme-picker__option">
+        <input type="checkbox" name="event-theme-checkbox" value="plum">
+        Sustaining a Supportive and Inclusive Environment
+      </label>
+      <label class="event-theme-picker__option">
+        <input type="checkbox" name="event-theme-checkbox" value="teal">
+        Ensuring the Integrity of our Research
+      </label>
+      <label class="event-theme-picker__option">
+        <input type="checkbox" name="event-theme-checkbox" value="lightblue">
+        Enabling Research Opportunities through Collaboration and Innovation
+      </label>
+      <label class="event-theme-picker__option">
+        <input type="checkbox" name="event-theme-checkbox" value="coral">
+        Recognising and Developing our Research Community
+      </label>
+      <p class="field__error" id="event-theme-error" role="alert"></p>
+    </fieldset>
+
+    <div class="field">
+      <label for="event-chair">Chair <span class="field__optional">(optional)</span></label>
+      <input type="text" id="event-chair">
+    </div>
+
+    <div class="field">
+      <label for="event-speakers">Speakers <span class="field__optional">(optional)</span></label>
+      <textarea id="event-speakers" rows="2"></textarea>
+    </div>
+
+    <div class="field">
+      <label for="event-location">Location <span class="field__optional">(optional)</span></label>
+      <input type="text" id="event-location">
+    </div>
+
+    <div class="field">
+      <label for="event-libcal">LibCal registration link <span class="field__optional">(optional — leave blank to show "Registration opening soon")</span></label>
+      <input type="url" id="event-libcal" placeholder="https://lancaster-uk.libcal.com/event/…">
+      <p class="field__helper" id="libcal-helper">Leave blank until the LibCal event is published.</p>
+    </div>
+
+    <div class="dialog__actions">
+      <button type="button" class="btn-ghost" data-close-dialog>Cancel</button>
+      <button type="submit" class="btn-primary">Save event</button>
+    </div>
+  </form>
+</dialog>
+
+<div id="toast-region" class="toast-region" aria-live="polite"></div>
+
+<template id="card-template">
+  <article class="event-card">
+    <div class="event-card__theme"></div>
+    <div class="event-card__body">
+      <p class="event-card__time"><span class="event-card__day"></span><span class="event-card__sep"> · </span><span class="event-card__time-value"></span></p>
+      <h3 class="event-card__title"></h3>
+      <div class="event-card__meta">
+        <p class="event-card__meta-row event-card__meta-row--chair"><span class="event-card__meta-label">Chair:</span> <span class="event-card__meta-value"></span></p>
+        <p class="event-card__meta-row event-card__meta-row--speakers"><span class="event-card__meta-label">Speakers:</span> <span class="event-card__meta-value"></span></p>
+        <p class="event-card__meta-row event-card__meta-row--location"><span class="event-card__meta-label">Location:</span> <span class="event-card__meta-value"></span></p>
+      </div>
+      <div class="event-card__actions">
+        <a class="btn-register" target="_blank" rel="noopener"></a>
+        <button class="btn-register" aria-disabled="true" type="button"></button>
+        <button class="btn-ghost admin-only" data-action="edit" type="button">Edit</button>
+        <button class="btn-ghost admin-only" data-action="delete" type="button">Delete</button>
+      </div>
+    </div>
+  </article>
+</template>
+
+<!-- Fallback copy of events.json, used only when fetch() cannot load the
+     external file (e.g. index.html opened directly via file://, where
+     browsers block local fetch requests). On a real web host, app.js
+     always prefers the live events.json over this snapshot. Regenerate
+     this block from events.json after publishing a change if you want
+     the file:// fallback to reflect it too (see README). -->
+<script type="application/json" id="events-data">
+[
+  {
+    "id": "monday-s1",
+    "day": "monday",
+    "dayLabel": "Monday 28th September",
+    "slot": "Session One",
+    "time": "09:30–11:00",
+    "title": "RCW Welcome & ReCAP 2024-2028 Progress Update",
+    "chair": "Professor Rebecca Lingwood, DVC and Professor Nick Race, Director Research Culture",
+    "speakers": "Researcher Development Panel: Elizabeth Adams, Scafell Coaching (Chair) Corinna PB, ECR, MCR, Technician, Professor, RES Prof.",
+    "location": "Margaret Fell Lecture Theatre",
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4571657",
+    "themes": [
+      "gold"
+    ]
+  },
+  {
+    "id": "tuesday-s1",
+    "day": "tuesday",
+    "dayLabel": "Tuesday 29th September",
+    "slot": "Session One",
+    "time": "09:30–11:00",
+    "title": "SPRE ILS Workshop/Consultation",
+    "chair": "Professor Jo Rycroft-Malone, Pro-Vice Chancellor Research and Enterprise Opening, Professor Leon Cruickshank Facilitating",
+    "speakers": "Becky Gordon, Head of Research Quality and Policy",
+    "location": "Management School (TBD)",
+    "libcalUrl": null,
+    "themes": [
+      "gold"
+    ]
+  },
+  {
+    "id": "wednesday-s1",
+    "day": "wednesday",
+    "dayLabel": "Wednesday 30th September",
+    "slot": "Session One",
+    "time": "09:30–11:00",
+    "title": "Launch of EDI Research Hub",
+    "chair": "Professor Kendi Guantai, Dean Culture and Inclusion",
+    "speakers": "Panel TBD - Sophie, Chris, Sunita",
+    "location": "Library Engagement Space",
+    "libcalUrl": null,
+    "themes": [
+      "plum"
+    ]
+  },
+  {
+    "id": "thursday-s1",
+    "day": "thursday",
+    "dayLabel": "Thursday 1st October",
+    "slot": "Session One",
+    "time": "09:30–11:00",
+    "title": "PGR Consultation?",
+    "chair": "Professor Corinna Peniston Bird, Cross-Faculty Dean for Postgraduate Studies",
+    "speakers": "Margriet Groen + Debbie Costain (Sense of Belonging work)",
+    "location": "TBD",
+    "libcalUrl": null,
+    "themes": [
+      "plum"
+    ]
+  },
+  {
+    "id": "monday-s2",
+    "day": "monday",
+    "dayLabel": "Monday 28th September",
+    "slot": "Session Two",
+    "time": "11:00–12:00",
+    "title": "Reimagining Research Practices (RRP) Showcase",
+    "chair": "Professor Rebecca Lingwood, DVC",
+    "speakers": "Becky Gordon, Cat Gold, Carlos Lopez-Galviz, Mark Levine, Phil Barker",
+    "location": "Margaret Fell Lecture Theatre",
+    "libcalUrl": null,
+    "themes": [
+      "teal"
+    ]
+  },
+  {
+    "id": "tuesday-s2",
+    "day": "tuesday",
+    "dayLabel": "Tuesday 29th September",
+    "slot": "Session Two",
+    "time": "11:00–12:00",
+    "title": "Cuppa Conundrum: Navigating Emotionally Distressing Research",
+    "chair": "",
+    "speakers": "Dan Craddock",
+    "location": "Library Engagement Space",
+    "libcalUrl": null,
+    "themes": [
+      "plum"
+    ]
+  },
+  {
+    "id": "wednesday-s2",
+    "day": "wednesday",
+    "dayLabel": "Wednesday 30th September",
+    "slot": "Session Two",
+    "time": "11:00–12:00",
+    "title": "Idea Lab: Creating Safe Spaces for Early-Stage Research Ideas and Collaboration",
+    "chair": "",
+    "speakers": "Elsahn Ziad, Simone Corsi, Sarah Jack",
+    "location": "Library Engagement Space",
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4571751",
+    "themes": [
+      "lightblue"
+    ]
+  },
+  {
+    "id": "thursday-s2",
+    "day": "thursday",
+    "dayLabel": "Thursday 1st October",
+    "slot": "Session Two",
+    "time": "11:00–12:00",
+    "title": "Cuppa Conundrum: Research Integrity Dilemmas",
+    "chair": "",
+    "speakers": "Dan Craddock",
+    "location": "Library Engagement Space",
+    "libcalUrl": null,
+    "themes": [
+      "teal"
+    ]
+  },
+  {
+    "id": "monday-lunch",
+    "day": "monday",
+    "dayLabel": "Monday 28th September",
+    "slot": "Lunchtime Session",
+    "time": "12:00–13:00",
+    "title": "Lunch in MF Foyer. In MF Lecture Theatre - Participatory (and Policy) Research Showcase",
+    "chair": "N/A",
+    "speakers": "Jess Shaw (and Janine Bickerstaff?)",
+    "location": "Margaret Fell Lecture Theatre",
+    "libcalUrl": null,
+    "themes": [
+      "gold"
+    ]
+  },
+  {
+    "id": "tuesday-lunch",
+    "day": "tuesday",
+    "dayLabel": "Tuesday 29th September",
+    "slot": "Lunchtime Session",
+    "time": "12:00–13:00",
+    "title": "Imagination Mixer",
+    "chair": "",
+    "speakers": "Joe Lindley",
+    "location": "A36 Imagination Lab, LICA",
+    "libcalUrl": null,
+    "themes": [
+      "lightblue"
+    ]
+  },
+  {
+    "id": "wednesday-lunch",
+    "day": "wednesday",
+    "dayLabel": "Wednesday 30th September",
+    "slot": "Lunchtime Session",
+    "time": "12:00–13:00",
+    "title": "PRISMS Research Culture Cafe",
+    "chair": "",
+    "speakers": "Amy Mayfield",
+    "location": "TBD",
+    "libcalUrl": null,
+    "themes": [
+      "coral"
+    ]
+  },
+  {
+    "id": "thursday-lunch",
+    "day": "thursday",
+    "dayLabel": "Thursday 1st October",
+    "slot": "Lunchtime Session",
+    "time": "12:00–13:00",
+    "title": "How can Lancaster University campus be a testbed for your research? How can we better embed research in our spending?",
+    "chair": "",
+    "speakers": "Zoe Detko",
+    "location": "Library Engagement Space",
+    "libcalUrl": null,
+    "themes": [
+      "lightblue"
+    ]
+  },
+  {
+    "id": "monday-s3",
+    "day": "monday",
+    "dayLabel": "Monday 28th September",
+    "slot": "Session Three",
+    "time": "13:00–14:00",
+    "title": "British Academy ECR Network: Introducing the Network and the opportunities it offers to ECRs working across SHAPE research.",
+    "chair": "Professor Suzanne Ost or Dr Leonie Smith",
+    "speakers": "Pam Forster",
+    "location": "Library Engagement Space",
+    "libcalUrl": null,
+    "themes": [
+      "plum"
+    ]
+  },
+  {
+    "id": "tuesday-s3",
+    "day": "tuesday",
+    "dayLabel": "Tuesday 29th September",
+    "slot": "Session Three",
+    "time": "13:00–14:00",
+    "title": "How can we improve promotions and wellbeing?",
+    "chair": "",
+    "speakers": "Olivia Carter",
+    "location": "POE Training Rooms (TBC)",
+    "libcalUrl": null,
+    "themes": [
+      "coral"
+    ]
+  },
+  {
+    "id": "wednesday-s3",
+    "day": "wednesday",
+    "dayLabel": "Wednesday 30th September",
+    "slot": "Session Three",
+    "time": "13:00–14:00",
+    "title": "Writing Retreats - Creating Space for Sociable Solitary Work",
+    "chair": "",
+    "speakers": "Chris Atkinson",
+    "location": "Library Engagement Space",
+    "libcalUrl": null,
+    "themes": [
+      "coral"
+    ]
+  },
+  {
+    "id": "thursday-s3",
+    "day": "thursday",
+    "dayLabel": "Thursday 1st October",
+    "slot": "Session Three",
+    "time": "13:00–14:00",
+    "title": "Community-Centred Research in Practice: Exploring Reflective Prompts",
+    "chair": "",
+    "speakers": "Nuri Kwon",
+    "location": "Library Engagement Space",
+    "libcalUrl": null,
+    "themes": [
+      "plum"
+    ]
+  },
+  {
+    "id": "monday-s4",
+    "day": "monday",
+    "dayLabel": "Monday 28th September",
+    "slot": "Session Four",
+    "time": "14:00–15:30",
+    "title": "Combined Proposal 1) Open Research, Open People: Wellbeing as Infrastructure in Universities and 2) DMPs 4 Research Integrity: Revisiting and Deepening what we include in Data Management Plans",
+    "chair": "",
+    "speakers": "Tom Morley, Joanne Fitzpatrick and Jess Shaw",
+    "location": "Library Engagement Space",
+    "libcalUrl": null,
+    "themes": [
+      "teal"
+    ]
+  },
+  {
+    "id": "tuesday-s4",
+    "day": "tuesday",
+    "dayLabel": "Tuesday 29th September",
+    "slot": "Session Four",
+    "time": "14:00–15:30",
+    "title": "Embedding Equality, Diversity and Inclusion into Grant Applications - Exploring How to Do Better",
+    "chair": "",
+    "speakers": "Jess Shaw, Odette Dewhurst, Chris Atkinson",
+    "location": "TBC",
+    "libcalUrl": null,
+    "themes": [
+      "teal"
+    ]
+  },
+  {
+    "id": "wednesday-s4",
+    "day": "wednesday",
+    "dayLabel": "Wednesday 30th September",
+    "slot": "Session Four",
+    "time": "14:00–15:30",
+    "title": "How we can improve recruitment and redeployment?",
+    "chair": "",
+    "speakers": "Olivia Carter",
+    "location": "POE Training Rooms (TBC)",
+    "libcalUrl": null,
+    "themes": [
+      "coral"
+    ]
+  },
+  {
+    "id": "thursday-s4",
+    "day": "thursday",
+    "dayLabel": "Thursday 1st October",
+    "slot": "Session Four",
+    "time": "14:00–15:30",
+    "title": "AI in Research: Ethics, Opportunities and Emerging Governance (Panel Discussion?)",
+    "chair": "",
+    "speakers": "Tao + Odette Dewhurst, DSAIL (Chris Nemeth), Yvonne Fox? Guillermo (FHM)?",
+    "location": "",
+    "libcalUrl": null,
+    "themes": [
+      "teal"
+    ]
+  }
+]
+</script>
+
+<script src="app.js"></script>
+
+</body>
+</html>
