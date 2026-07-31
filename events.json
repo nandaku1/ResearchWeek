@@ -87,7 +87,8 @@
     "libcalUrl": null,
     "themes": [
       "plum"
-    ]
+    ],
+    "abstract": "This is an interactive workshop that allows for discussion and debate on current issues relating to emotionally distressing research. The cuppa conundrum series, developed through the reimagining research practices project, is a safe space for debate on tricky ethical dilemmas relating to research. The content for the conundrums is informed by the work of a Dr Chris Walton, with expertise in emotionally distressing research. With considerations of how to protect yourself as a researcher, how to create a supportive research environment for work of this kind to take place safely and ethically, and other complications that can emerge for researchers. The session is open to all."
   },
   {
     "id": "wednesday-s2",
@@ -102,7 +103,8 @@
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4571751",
     "themes": [
       "lightblue"
-    ]
+    ],
+    "abstract": "This session showcases the Idea Lab, a departmental initiative that creates an informal, supportive space for colleagues to share early-stage research ideas, puzzling observations, and emerging empirical interests. We will discuss how the model supports development and collaboration, particularly for Early and Mid-Career Researchers. We will also reflect on challenges, including how to support researchers beyond the initial idea-testing stage, and consider how the model could be scaled across faculties to encourage interdisciplinary collaboration."
   },
   {
     "id": "thursday-s2",
@@ -117,7 +119,8 @@
     "libcalUrl": null,
     "themes": [
       "teal"
-    ]
+    ],
+    "abstract": "This is an interactive workshop that allows for discussion and debate on current issues relating to research integrity. This work forms part of our IAA AHRC grant exploring creative methods for empowering earlier interventions in cases of research integrity misconduct. The cuppa conundrum series, developed through the reimagining research practices project, is a safe space for debate on tricky ethical dilemmas relating to research. The content for the conundrums is informed by a series of interviews with research integrity colleagues across UK HEI's and is open to all."
   },
   {
     "id": "monday-lunch",
@@ -132,7 +135,8 @@
     "libcalUrl": null,
     "themes": [
       "gold"
-    ]
+    ],
+    "abstract": "Enjoy a series of flash talks over lunch, from researchers at different career stages who have successfully secured Participatory Research Funding. In this relaxed session, speakers will share their experiences of working with community partners, lessons learned along the way, and top tips for success. You'll gain insight into what participatory research looks like in practice and have the opportunity to ask those burning questions you've always wanted answered."
   },
   {
     "id": "tuesday-lunch",
@@ -207,7 +211,8 @@
     "libcalUrl": null,
     "themes": [
       "coral"
-    ]
+    ],
+    "abstract": "Join this focus group to share your experiences, insights, and ideas in an open and supportive discussion. Your feedback will help identify what works well, the challenges researchers face, and practical ways we can better support career progression and wellbeing. Whether you're at the start of your research career or more experienced, your perspective is valuable and will help shape recommendations for positive change across our research community."
   },
   {
     "id": "wednesday-s3",
@@ -222,7 +227,8 @@
     "libcalUrl": null,
     "themes": [
       "coral"
-    ]
+    ],
+    "abstract": "Writing (and reading) retreats can be a great way to find focused time for research within a supportive environment. This session will showcase some different formats for retreats. You will then get the opportunity to contribute to a University Guide on Writing Retreats, intended to be published as an Open Educational Resource. Your contributions will be valued regardless of your experience (or not) in hosting/attending retreats."
   },
   {
     "id": "thursday-s3",
@@ -237,7 +243,8 @@
     "libcalUrl": null,
     "themes": [
       "plum"
-    ]
+    ],
+    "abstract": "How can we design community centred research that is more inclusive, relevant, and responsive to community priorities? This interactive session invites you to explore a prompt card deck designed to support reflection and dialogue around community-centred research. Through small-group activities, you will explore different prompts, share perspectives, and identify the values and principles that underpin meaningful collaboration. The session will provide space to consider whose voices are included, what knowledge is valued, and how research practices can better support communities."
   },
   {
     "id": "monday-s4",
@@ -252,7 +259,8 @@
     "libcalUrl": null,
     "themes": [
       "teal"
-    ]
+    ],
+    "abstract": "This interactive ‘World Café’ brings together three lively Open Research discussions in one session. You'll rotate around each table, contributing to every conversation as we explore key challenges, opportunities and practical solutions. Topics include reducing the administrative burden of Open Research and supporting researcher wellbeing, how effective data management can save time and prevent problems, and enabling communities to find, understand and use research. Facilitated by the Open Research team and Public Engagement Manager, each table will combine discussion, practical examples and creative activities designed to spark conversation and fresh thinking. You'll leave with practical insights, a better understanding of the support available, and help shape a more open and supportive research culture."
   },
   {
     "id": "tuesday-s4",
@@ -267,7 +275,8 @@
     "libcalUrl": null,
     "themes": [
       "teal"
-    ]
+    ],
+    "abstract": "Hear examples from researchers about what considering Equality, Diversity and Inclusion in your research grants can look like in practice. Hear their lessons learned and tips for success. Then join the discussion with an interactive session exploring the challenges and opportunities for growth and support in this area. After this stimulating conversation, join Professor Kendi Guantai, Dean Culture and Inclusion on Wednesday 30th September at 9:30am for the launch of Lancaster University’s EDI Research Hub, with panel discussion and networking."
   },
   {
     "id": "wednesday-s4",
@@ -282,7 +291,8 @@
     "libcalUrl": null,
     "themes": [
       "coral"
-    ]
+    ],
+    "abstract": "Join this focus group to share your experiences, insights, and ideas in an open and supportive discussion to explore how researchers can be better supported through re-deployment, the barriers and opportunities within current processes, and how career transitions could be better managed. Your insights will help identify practical ways to strengthen re-deployment practices. We will also explore your perspectives on recruitment and identify opportunities to improve recruitment approaches across our research community."
   },
   {
     "id": "thursday-s4",

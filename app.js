@@ -115,6 +115,14 @@
       setMetaRow(node, 'speakers', ev.speakers);
       setMetaRow(node, 'location', ev.location);
 
+      const abstractNode = $('.event-card__abstract', node);
+      if (ev.abstract) {
+        $('p', abstractNode).textContent = ev.abstract;
+        abstractNode.hidden = false;
+      } else {
+        abstractNode.hidden = true;
+      }
+
       const link = $('a.btn-register', node);
       const disabledBtn = $('button.btn-register', node);
       if (ev.libcalUrl) {
@@ -280,6 +288,7 @@
     $('#event-slot').value = ev ? ev.slot : '';
     $('#event-time').value = ev ? ev.time : '';
     $('#event-title').value = ev ? ev.title : '';
+    $('#event-abstract').value = ev ? ev.abstract || '' : '';
     const selectedThemes = ev ? ev.themes || [] : [];
     $$('input[name="event-theme-checkbox"]').forEach((box) => {
       box.checked = selectedThemes.includes(box.value);
@@ -354,6 +363,7 @@
       slot: $('#event-slot').value.trim(),
       time: $('#event-time').value.trim(),
       title: $('#event-title').value.trim(),
+      abstract: $('#event-abstract').value.trim(),
       themes: selectedThemes,
       chair: $('#event-chair').value.trim(),
       speakers: $('#event-speakers').value.trim(),

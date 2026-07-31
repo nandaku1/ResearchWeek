@@ -484,6 +484,21 @@ input:invalid[aria-invalid="true"] { border-color: var(--color-error); }
 }
 .event-card__meta-value { color: var(--color-ink); }
 
+.event-card__abstract summary {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-ink-2);
+  cursor: pointer;
+  width: fit-content;
+}
+.event-card__abstract summary:hover { color: var(--color-ink); }
+.event-card__abstract p {
+  margin-block-start: var(--space-2xs);
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+  line-height: 1.5;
+}
+
 .event-card__actions {
   margin-block-start: auto;
   padding-block-start: var(--space-sm);

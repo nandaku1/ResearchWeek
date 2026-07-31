@@ -133,6 +133,7 @@ throughout.
   "slot": "Session One",
   "time": "09:30–11:00",
   "title": "…",
+  "abstract": "…",
   "themes": ["gold"],
   "chair": "…",
   "speakers": "…",
@@ -144,7 +145,9 @@ throughout.
 `themes` is an array of one or more of `gold | plum | teal | lightblue | coral` — a
 session can address more than one pillar. The admin form requires at least one.
 `libcalUrl` is `null` when no registration link exists yet. Empty fields (`chair`,
-`speakers`, `location`) are allowed and simply omitted from the card display.
+`speakers`, `location`, `abstract`) are allowed and simply omitted from the card
+display. `abstract`, where present, renders as a collapsed "Abstract" disclosure on
+the card.
 
 ## License
 
