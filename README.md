@@ -107,8 +107,7 @@ available.
 Each session can belong to more than one Research Culture pillar (theme), shown as
 small coloured pills on its card and filterable via the theme checkboxes above the
 programme grid. Internal colour keys (`gold`/`plum`/`teal`/`lightblue`/`coral`) map to
-pillar names in `THEME_LABELS` in `app.js` — the `gold` pillar's name is not yet
-finalised and shows as a placeholder until confirmed.
+pillar names in `THEME_LABELS` in `app.js`.
 
 ## Accessibility
 

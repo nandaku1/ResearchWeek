@@ -9,7 +9,7 @@
   // Short label shown on each card's compact theme pill and the filter chips —
   // an abbreviation of the real pillar name below, not a colour reference.
   const THEME_SHORT = {
-    gold: 'Additional theme',
+    gold: 'Strategy',
     plum: 'Inclusion',
     teal: 'Integrity',
     lightblue: 'Collaboration',
@@ -17,9 +17,8 @@
   };
   // Full pillar names — shown in the admin form's Theme dropdown, the "Theme"
   // key under the filter bar, and as each pill's tooltip/accessible name.
-  // "gold" has no confirmed pillar name yet — see README "Theme colours".
   const THEME_LABELS = {
-    gold: 'Additional theme — name to confirm',
+    gold: 'Strategy',
     plum: 'Sustaining a Supportive and Inclusive Environment',
     teal: 'Ensuring the Integrity of our Research',
     lightblue: 'Enabling Research Opportunities through Collaboration and Innovation',
