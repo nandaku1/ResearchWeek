@@ -1,4 +1,4 @@
-[
+window.RCW_EVENTS = [
   {
     "id": "monday-s1",
     "day": "monday",
@@ -309,4 +309,4 @@
       "teal"
     ]
   }
-]
+];

@@ -11,7 +11,7 @@ index.html    page structure
 tokens.css    design tokens (colours, fonts, spacing)
 styles.css    all visual styling
 app.js        rendering, filtering, admin login, add/edit/delete, export
-events.json   the session records — the site's only data source
+events.js     the session records — the site's only data source
 ```
 
 This repo packages the site as a plain Nginx Docker container.
@@ -29,25 +29,12 @@ Then visit [http://localhost:8080](http://localhost:8080).
 
 ### Without Docker
 
-Double-clicking `index.html` works straight from disk — `app.js` tries to `fetch()`
-the live `events.json` first, and falls back to a snapshot baked into an inline
-`<script id="events-data">` tag in `index.html` for cases where the browser blocks
-local file fetches. That fallback is a point-in-time copy: if `events.json` changes
-and the local file:// view should reflect it too, regenerate the inline block with:
+Double-clicking `index.html` works straight from disk, no server needed. `events.js`
+is a plain `<script src="events.js">` tag (it sets `window.RCW_EVENTS`), not loaded via
+`fetch()`, so — unlike a `.json` file — the browser can read it whether the page was
+opened by double-click (`file://`) or served over http(s). One file, one behaviour.
 
-```bash
-python3 -c "
-import json, re
-with open('events.json') as f: data = f.read()
-with open('index.html') as f: html = f.read()
-html = re.sub(r'<script type=\"application/json\" id=\"events-data\">.*?</script>',
-              '<script type=\"application/json\" id=\"events-data\">\n' + data.rstrip() + '\n</script>',
-              html, flags=re.S)
-with open('index.html', 'w') as f: f.write(html)
-"
-```
-
-Or serve the folder so the live `events.json` is always used:
+You can still serve the folder over http if you prefer:
 
 ```bash
 python3 -m http.server 8000
@@ -69,8 +56,8 @@ republished:
 1. Log in as admin (the link under the masthead, or in the footer) and make changes —
    add, edit, or delete sessions. Each change is saved to that browser's local storage
    automatically, so an accidental refresh won't lose the work in progress.
-2. Click **Download events.json** in the admin bar to save an updated `events.json`.
-3. Replace `events.json` in this repo (or wherever it's hosted) with the downloaded
+2. Click **Download events.js** in the admin bar to save an updated `events.js`.
+3. Replace `events.js` in this repo (or wherever it's hosted) with the downloaded
    one, then rebuild/redeploy the container. No other files change.
 
 If two admins edit at the same time in different browsers, the last one to publish
@@ -83,7 +70,7 @@ Credentials are hardcoded in `app.js` (`ADMIN_USERNAME`, `ADMIN_PASSWORD`). **Th
 content gate, not real authentication** — the credentials are visible to anyone who
 views the page source, since there's no server to keep a secret from. It stops casual
 visitors from finding the edit controls; it does not stop a determined person from
-reading the password or posting a fabricated `events.json` elsewhere. Do not rely on
+reading the password or posting a fabricated `events.js` elsewhere. Do not rely on
 this pattern for anything where the data or the site's integrity needs real protection.
 Change the two constants in `app.js` before publishing if the defaults need rotating.
 
@@ -93,7 +80,7 @@ Each session's "Register" button uses its `libcalUrl` field. Until a LibCal even
 exists, leave that field blank in the admin edit form — the card shows a disabled
 "Registration opening soon" button instead of a dead link. Add the real
 `https://lancaster-uk.libcal.com/event/…` URL once it's published, then re-export and
-republish `events.json`.
+republish `events.js`.
 
 ## Fonts and colours
 
@@ -123,7 +110,10 @@ assumed, since not every fill contrasts the same way with the same text colour.
 Responsive down to a 320px viewport width; touch targets are at least 44×44px
 throughout.
 
-## Data model (`events.json`)
+## Data model (`events.js`)
+
+`events.js` is `window.RCW_EVENTS = [ ... ];` — the array is otherwise identical to
+what plain JSON would look like:
 
 ```json
 {

@@ -56,20 +56,16 @@
   // Data load
   // ---------------------------------------------------------------- //
 
-  async function loadEvents() {
-    // Prefer the live events.json — on a real web host this always reflects
-    // the latest published data. fetch() of a local file fails under
-    // file:// (browsers block it), so fall back to the inline snapshot
-    // baked into index.html for that case.
-    try {
-      const res = await fetch('events.json', { cache: 'no-store' });
-      if (!res.ok) throw new Error('Failed to load events.json');
-      return await res.json();
-    } catch (err) {
-      const inline = document.getElementById('events-data');
-      if (!inline) throw err;
-      return JSON.parse(inline.textContent);
+  function loadEvents() {
+    // events.js sets window.RCW_EVENTS via a <script src="events.js"> tag
+    // loaded before this file. A <script> tag (unlike fetch()) can read a
+    // local file under file://, so this works identically whether the site
+    // is opened by double-clicking index.html or served over http(s) —
+    // no separate fallback path needed.
+    if (!Array.isArray(window.RCW_EVENTS)) {
+      throw new Error('window.RCW_EVENTS was not set — events.js failed to load or is malformed');
     }
+    return window.RCW_EVENTS;
   }
 
   function sortEvents(list) {
@@ -441,16 +437,17 @@
   // ---------------------------------------------------------------- //
 
   $('#download-btn').addEventListener('click', () => {
-    const blob = new Blob([JSON.stringify(sortEvents(events), null, 2)], { type: 'application/json' });
+    const content = `window.RCW_EVENTS = ${JSON.stringify(sortEvents(events), null, 2)};\n`;
+    const blob = new Blob([content], { type: 'text/javascript' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'events.json';
+    a.download = 'events.js';
     document.body.appendChild(a);
     a.click();
     a.remove();
     URL.revokeObjectURL(url);
-    showToast('events.json downloaded — replace it on your web host to publish these changes.');
+    showToast('events.js downloaded — replace the events.js file next to index.html, then refresh the page.');
   });
 
   // ---------------------------------------------------------------- //
@@ -493,12 +490,12 @@
   // Init
   // ---------------------------------------------------------------- //
 
-  async function init() {
+  function init() {
     try {
-      events = sortEvents(await loadEvents());
+      events = sortEvents(loadEvents());
     } catch (err) {
       const p = document.createElement('p');
-      p.textContent = "Could not load the programme data. Both events.json and the inline fallback failed — check that events.json is valid JSON and that the #events-data script tag in index.html hasn't been removed or corrupted (see README).";
+      p.textContent = "Could not load the programme data. Check that events.js is present next to index.html, is valid, and is loaded by a <script src=\"events.js\"> tag before app.js (see README).";
       p.style.padding = '2rem';
       cardGrid.replaceWith(p);
       return;
