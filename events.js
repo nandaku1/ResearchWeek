@@ -75,7 +75,7 @@ window.RCW_EVENTS = [
     "slot": "Session Four",
     "time": "14:00–15:30",
     "title": "Let's Talk Open Research:  Exploring People, Practice and Public Benefit",
-    "abstract": "This interactive 'World Café' brings together three lively Open Research discussions in one session. You'll rotate around each table, contributing to every conversation as we explore key challenges, opportunities and practical solutions. Topics include reducing the administrative burden of Open Research and supporting researcher wellbeing, how effective data management can save time and prevent problems, and enabling communities to find, understand and use research. Facilitated by the Open Research team and Public Engagement Manager, each table will combine discussion, practical examples and creative activities designed to spark conversation and fresh thinking. You'll leave with practical insights, a better understanding of the support available, and help shape a more open and supportive research culture.",
+    "abstract": "This interactive ‘World Café’ brings together three lively Open Research discussions in one session. You'll rotate around each table, contributing to every conversation as we explore key challenges, opportunities and practical solutions. Topics include reducing the administrative burden of Open Research and supporting researcher wellbeing, how effective data management can save time and prevent problems, and enabling communities to find, understand and use research. Facilitated by the Open Research team and Public Engagement Manager, each table will combine discussion, practical examples and creative activities designed to spark conversation and fresh thinking. You'll leave with practical insights, a better understanding of the support available, and help shape a more open and supportive research culture.",
     "themes": [
       "teal"
     ],
@@ -107,7 +107,7 @@ window.RCW_EVENTS = [
     "slot": "Session Two",
     "time": "11:00–12:00",
     "title": "Cuppa Conundrum: Navigating Emotionally Distressing Research",
-    "abstract": "This is an interactive workshop that allows for discussion and debate on current issues relating to emotionally distressing research. The cuppa conundrum series, developed through the reimagining research practices project, is a safe space for debate on tricky ethical dilemmas relating to research. The content for the conundrums is informed by the work of a Dr Chris Walton, with expertise in emotionally distressing research. With considerations of how to protect yourself as a researcher, how to create a supportive research environment for work of this kind to take place safely and ethically, and other complications that can emerge for researchers. The session is open to all.",
+    "abstract": "The Cuppa Conundrum series — developed through the Reimagining Research Practices project — creates a safe space for discussion of tricky ethical dilemmas relating to research. This session focuses on current issues relating to emotionally distressing research\n \nCo-facilitated by Dr Chris Walton (Psychology) and Dr Dan Craddock (RES), this interactive workshop explores how to protect yourself as a researcher, how to create a supportive research environment for work of this kind to take place safely and ethically, and navigating other complications which can emerge for researchers.\n \nThis session is open to all.",
     "themes": [
       "plum",
       "teal"
@@ -156,7 +156,7 @@ window.RCW_EVENTS = [
     "slot": "Session Four",
     "time": "14:00–15:30",
     "title": "Embedding Equality, Diversity and Inclusion into Grant Applications",
-    "abstract": "Hear examples from researchers about what considering Equality, Diversity and Inclusion in your research grants can look like in practice. Hear their lessons learned and tips for success. Then join the discussion with an interactive session exploring the challenges and opportunities for growth and support in this area. After this stimulating conversation, join Professor Kendi Guantai, Dean Culture and Inclusion on Wednesday 30th September at 9:30am for the launch of Lancaster University's EDI Research Hub, with panel discussion and networking.",
+    "abstract": "Hear examples from researchers about what considering Equality, Diversity and Inclusion in your research grants can look like in practice. Hear their lessons learned and tips for success. Then join the discussion with an interactive session exploring the challenges and opportunities for growth and support in this area. After this stimulating conversation, join Professor Kendi Guantai, Dean Culture and Inclusion on Wednesday 30th September at 9:30am for the launch of Lancaster University’s EDI Research Hub, with panel discussion and networking.",
     "themes": [
       "plum",
       "teal"
@@ -183,6 +183,24 @@ window.RCW_EVENTS = [
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4572204"
   },
   {
+    "id": "wednesday-30th-september-session-one",
+    "day": "wednesday",
+    "dayLabel": "Wednesday 30th September",
+    "slot": "Session One",
+    "time": "10:00-11.00",
+    "title": "How to get your first paper published",
+    "abstract": "This in-person session is aimed at MA students and PGRs who want to get their first paper published.  We will cover key issues on writing, selecting journals, submitting papers and so on.\n\nWe will welcome your questions. This session will not be recorded.\n\nThis session will be led by Julia Gillen and Uta Papen, of the Lancaster Literacy Research Centre.",
+    "themes": [
+      "plum",
+      "teal",
+      "coral"
+    ],
+    "chair": "",
+    "speakers": "Professor Julia Gillen and Professor Uta Papen",
+    "location": "POE Training Rooms 1 & 2",
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4578941"
+  },
+  {
     "id": "wednesday-s2",
     "day": "wednesday",
     "dayLabel": "Wednesday 30th September",
@@ -199,23 +217,6 @@ window.RCW_EVENTS = [
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4571751"
   },
   {
-    "id": "wednesday-30th-september-session-two",
-    "day": "wednesday",
-    "dayLabel": "Wednesday 30th September",
-    "slot": "Session Two",
-    "time": "10:00-11:00",
-    "title": "How to get your first paper published",
-    "abstract": "This in-person session is aimed at MA students and PGRs who want to get their first paper published. We will cover key issues on writing, selecting journals, submitting papers and so on.\n\nThis session will be led by Julia Gillen and Uta Papen, of the Lancaster Literacy Research Centre.\n\nWe will welcome your questions. This session will not be recorded.",
-    "themes": [
-      "plum",
-      "coral"
-    ],
-    "chair": "Professor Julia Gillen; Professor Uta Papen",
-    "speakers": "",
-    "location": "TBC",
-    "libcalUrl": "https://lancaster-uk.libcal.com/aevent.php?m=edit&c=7955&event_id=4578941&gid=0"
-  },
-  {
     "id": "wednesday-lunch",
     "day": "wednesday",
     "dayLabel": "Wednesday 30th September",
@@ -228,8 +229,8 @@ window.RCW_EVENTS = [
       "lightblue"
     ],
     "chair": "",
-    "speakers": "Vincent Gaine",
-    "location": "TBD",
+    "speakers": "Dr Vincent Gaine",
+    "location": "POE Training Rooms 1 & 2",
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4574467"
   },
   {
@@ -287,7 +288,7 @@ window.RCW_EVENTS = [
     "slot": "Session Two",
     "time": "11:00–12:00",
     "title": "Cuppa Conundrum: Research Integrity Dilemmas",
-    "abstract": "This is an interactive workshop that allows for discussion and debate on current issues relating to research integrity. This work forms part of our IAA AHRC grant exploring creative methods for empowering earlier interventions in cases of research integrity misconduct. The cuppa conundrum series, developed through the reimagining research practices project, is a safe space for debate on tricky ethical dilemmas relating to research. The content for the conundrums is informed by a series of interviews with research integrity colleagues across UK HEI's and is open to all.",
+    "abstract": "This is an interactive workshop exploring current issues relating to research integrity. This work forms part of our IAA AHRC grant exploring creative methods for empowering earlier interventions in cases of research integrity misconduct.\n \nThe Cuppa Conundrum series — developed through the Reimagining Research Practices project — creates a safe space for discussion of tricky ethical dilemmas relating to research. The content for the conundrums is informed by a series of interviews with research integrity colleagues across UK HEIs.\n \nThis session is open to all.",
     "themes": [
       "teal"
     ],
@@ -303,7 +304,7 @@ window.RCW_EVENTS = [
     "slot": "Lunchtime Session",
     "time": "12:00–13:00",
     "title": "How can Lancaster University campus be a testbed for your research? How can we better embed research in our spending?",
-    "abstract": "Lancaster University's Net Zero infrastructure is not only helping us progress towards our carbon reduction goals, but is also embedded within research across campus. This session will explore how we can extend that approach beyond infrastructure and develop a campus-wide living lab. We will consider how activity relating to energy, biodiversity, behaviour change and other areas of sustainability can be connected across faculties and professional services. We will also explore how mapping this work against the Sustainable Development Goals could reveal its collective impact, strengthen collaboration, identify opportunities and help us capture and communicate the breadth of research taking place.",
+    "abstract": "Lancaster University’s Net Zero infrastructure is not only helping us progress towards our carbon reduction goals, but is also embedded within research across campus. This session will explore how we can extend that approach beyond infrastructure and develop a campus-wide living lab. We will consider how activity relating to energy, biodiversity, behaviour change and other areas of sustainability can be connected across faculties and professional services. We will also explore how mapping this work against the Sustainable Development Goals could reveal its collective impact, strengthen collaboration, identify opportunities and help us capture and communicate the breadth of research taking place.",
     "themes": [
       "lightblue"
     ],
@@ -311,6 +312,23 @@ window.RCW_EVENTS = [
     "speakers": "Dr Zoe Detko, Head of Sustainability",
     "location": "Library Exhibitions and Events Space",
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4574468"
+  },
+  {
+    "id": "thursday-1st-october-lunchtime-session",
+    "day": "thursday",
+    "dayLabel": "Thursday 1st October",
+    "slot": "Lunchtime Session",
+    "time": "12:30-14:00",
+    "title": "Researcher-Only Session: Planning Your Year Ahead",
+    "abstract": "This informal and interactive session is a chance to step away from your day-to-day work and think about what you'd like to work towards, what might help, and how the RCaD group could support you.\n\nWe will share ideas and resources, and talk about some of the opportunities and challenges research-only staff are facing.\n\nIt is also a chance to tell us what kinds of development opportunities or support would be most useful, so we can shape future activity around what people actually want and need.\n\nFree food and refreshments will be provided!",
+    "themes": [
+      "plum",
+      "coral"
+    ],
+    "chair": "",
+    "speakers": "",
+    "location": "POE Training Rooms 1 & 2",
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4580892"
   },
   {
     "id": "thursday-s3",
@@ -343,21 +361,5 @@ window.RCW_EVENTS = [
     "speakers": "Dr Yingnian Tao, Senior Research Associate, Reimagining Research Practices and Professor Chris Nemeth, Co-Director Data Science and AI Institute",
     "location": "Library Exhibitions and Events Space",
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4574469"
-  },
-  {
-    "id": "thursday-1st-october-session-four",
-    "day": "thursday",
-    "dayLabel": "Thursday 1st October",
-    "slot": "Session Four",
-    "time": "12:30–14:00",
-    "title": "Researcher-Only Session: Planning Your Year Ahead",
-    "abstract": "This informal and interactive session is a chance to step away from your day-to-day work and think about what you'd like to work towards, what might help, and how the RCaD group could support you. We will share ideas and resources, and talk about some of the opportunities and challenges research-only staff are facing. It is also a chance to tell us what kinds of development opportunities or support would be most useful, so we can shape future activity around what people actually want and need. Free food and refreshments will be provided!",
-    "themes": [
-      "coral"
-    ],
-    "chair": "",
-    "speakers": "",
-    "location": "TBC",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4580892"
   }
 ];
