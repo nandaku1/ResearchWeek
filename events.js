@@ -187,7 +187,7 @@ window.RCW_EVENTS = [
     "day": "wednesday",
     "dayLabel": "Wednesday 30th September",
     "slot": "Session One",
-    "time": "10:00-11.00",
+    "time": "10:00–11:00",
     "title": "How to get your first paper published",
     "abstract": "This in-person session is aimed at MA students and PGRs who want to get their first paper published.  We will cover key issues on writing, selecting journals, submitting papers and so on.\n\nWe will welcome your questions. This session will not be recorded.\n\nThis session will be led by Julia Gillen and Uta Papen, of the Lancaster Literacy Research Centre.",
     "themes": [
@@ -353,12 +353,12 @@ window.RCW_EVENTS = [
     "slot": "Session Four",
     "time": "14:00–15:30",
     "title": "AI in Research: Ethics, Opportunities and Emerging Governance",
-    "abstract": "",
+    "abstract": "This interactive session brings together a range of perspectives on the rapidly evolving role of AI in research, from the foundations of large language models and institutional GenAI guidance to research management, and researchers’ experiences of using AI in various disciplines.\n\nThe session will use an interactive research carousel format. Participants will join small-group discussions led by the expert speaker, rotating between topics. \n\nCome along to share experiences, ask questions, and explore what responsible AI use in research might look like. All research students, academic and support staff are very welcome.",
     "themes": [
       "teal"
     ],
     "chair": "",
-    "speakers": "Dr Yingnian Tao, Senior Research Associate, Reimagining Research Practices and Professor Chris Nemeth, Co-Director Data Science and AI Institute",
+    "speakers": "Dr Yingnian Tao, Senior Research Associate, Reimagining Research Practices; Professor Chris Nemeth, Co-Director Data Science and AI Institute; Dr Guillermo Perez Algorta, Senior Lecturer in Health Research, FHM and Mark Ryan, Associate Lecturer Research in LUMS.",
     "location": "Library Exhibitions and Events Space",
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4574469"
   }
