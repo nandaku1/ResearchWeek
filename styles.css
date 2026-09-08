@@ -497,6 +497,11 @@ input:invalid[aria-invalid="true"] { border-color: var(--color-error); }
   font-size: var(--text-sm);
   color: var(--color-ink);
   line-height: 1.5;
+  /* Abstract text carries deliberate \n / \n\n breaks (paragraph splits,
+     bulleted panel lists) — default `normal` white-space collapses all of
+     that into one run-on paragraph. `pre-line` keeps line breaks while still
+     wrapping normally and collapsing incidental runs of spaces/tabs. */
+  white-space: pre-line;
 }
 
 .event-card__actions {

@@ -6,7 +6,7 @@ window.RCW_EVENTS = [
     "slot": "Session One",
     "time": "09:30–11:00",
     "title": "RCW Welcome & ReCAP 2024-2028 Progress Update",
-    "abstract": "",
+    "abstract": "Our third Research Culture Week will be opened by Professor Rebecca Lingwood, Deputy Vice Chancellor at Lancaster University. Professor Nicholas Race, Director of Research Culture, will share an overview of progress against our Research-excellence Culture Action Plan (2024-2028) as well as opportunities and plans for the future.\n\nJoin the Researcher Development Panel for an inspiring conversation about building a successful and rewarding career. Panel members will share practical advice on professional development, navigating career transitions, developing leadership skills, and making the most of networking opportunities. Whether you are at the start of your career or considering your next step, this interactive session will offer valuable insights and fresh perspectives. \n\nWe are delighted to have the following panel members, with Dr Elizabeth Adams expertly facilitating the conversation: \n\n•\tDr Ed Austin, Research Fellow/RCAD Chair in FST\n•\tDr Allan Discua Cruz, Senior Lecturer \n•\tDr Amy Mayfield, Research Culture Manager\n•\tDr Swayamshree Mishra, Research Associate\n•\tProfessor Corinna Peniston-Bird - Cross Faculty Associate Dean for Doctoral Studies\n•\tCatherine Wearing, Senior Analytical Research Technician",
     "themes": [
       "gold"
     ],
@@ -20,16 +20,16 @@ window.RCW_EVENTS = [
     "day": "monday",
     "dayLabel": "Monday 28th September",
     "slot": "Session Two",
-    "time": "11:00–12:00",
+    "time": "11:15–12:00",
     "title": "Reimagining Research Practices (RRP) Showcase",
-    "abstract": "",
+    "abstract": "For the past two years, our Reimagining Research Practices project has investigated ways to make research more sustainable, ethical and inclusive — both at Lancaster, and beyond. Come along to hear from our interdisciplinary team about what we’ve learned and changed, and help us shape what’s next for research culture at Lancaster University.\n \nThe session will begin with a short presentation about the project’s key findings and resources produced, followed by a panel and audience discussion chaired by Deputy Vice Chancellor Rebecca Lingwood.\n \nFor more information about the project, please visit our website: https://www.lancaster.ac.uk/research/research-culture/reimagining-research-practices/",
     "themes": [
       "gold",
       "plum",
       "teal"
     ],
     "chair": "Professor Rebecca Lingwood, DVC",
-    "speakers": "Becky Gordon, Head of Research Quality and Policy, Catriona Gold, Reimagining Research Practices Project Manager",
+    "speakers": "Becky Gordon, Head of Research Quality and Policy; Louise Zambianchi, Head of Open Research; Professor Carlos Lopez-Galviz, School of Arts; Catriona Gold, Project Manager.",
     "location": "Margaret Fell Lecture Theatre",
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4574110"
   },
@@ -46,7 +46,7 @@ window.RCW_EVENTS = [
       "teal",
       "lightblue"
     ],
-    "chair": "N/A",
+    "chair": "",
     "speakers": "Jess Shaw, Public Engagement Manager",
     "location": "Margaret Fell Lecture Theatre",
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4572212"
@@ -58,13 +58,13 @@ window.RCW_EVENTS = [
     "slot": "Session Three",
     "time": "13:00–14:00",
     "title": "British Academy ECR Network: Introducing the Network and the opportunities it offers to ECRs working across SHAPE research.",
-    "abstract": "",
+    "abstract": "This session is open to all ECRs working in SHAPE research (Social Sciences, Humanities, Arts, Economics/Business/Management). The Network defines an ECR as someone who completed their PhD in the last 10 years, longer for career breaks. Research-active colleagues from all faculties on research-only, teaching & research, professional services contracts and technical contracts welcome. There is no requirement for you to have research included as a formal part of your workload.  PGRs in the write-up stage are also welcome to attend as they are eligible to join the Network once their PhD has been awarded. The session will include details of free development and training opportunities, and the upcoming ECR Network seed funding call. One of our ECRs will also present her experiences of being a member of the Network with lots of opportunities to ask questions.",
     "themes": [
       "plum",
       "lightblue"
     ],
-    "chair": "Professor Suzanne Ost or Dr Leonie Smith",
-    "speakers": "Pam Forster, Project Manager North West North Wales (NWNW) Early Career Researcher Network (ECRN)",
+    "chair": "Professor Suzanne Ost (Academic Lead) or Dr Leonie Smith (ECR Lead)",
+    "speakers": "Pam Forster, Project Manager of the British Academy's Early Career Researcher Network, North West North Wales (BA ECRN NWNW) Cluster",
     "location": "Library Exhibitions and Events Space",
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4574112"
   },
@@ -91,7 +91,7 @@ window.RCW_EVENTS = [
     "slot": "Session One",
     "time": "09:30–11:00",
     "title": "Strategy People and Research Environment (SPRE) Institution Level Statement (ILS) Strategy Session",
-    "abstract": "",
+    "abstract": "In this session we will share the findings and process to date in developing an outline draft of the Institution Level SPRE statement for REF2029. \n\nWe will review the five areas of the statement, in the context of our research environments and cultures at Lancaster and explore and celebrate our strengths and explore and discuss how we could strengthen areas identified for enhancement.",
     "themes": [
       "gold"
     ],
@@ -129,9 +129,26 @@ window.RCW_EVENTS = [
       "lightblue"
     ],
     "chair": "",
-    "speakers": "Professor Joe Lindley",
+    "speakers": "Dr Joe Lindley",
     "location": "A36 Imagination Lab, LICA",
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4574111"
+  },
+  {
+    "id": "wednesday-s3",
+    "day": "tuesday",
+    "dayLabel": "Tuesday 29th September",
+    "slot": "Lunchtime Session",
+    "time": "12:30–13:30",
+    "title": "Protecting Research Time",
+    "abstract": "",
+    "themes": [
+      "plum",
+      "coral"
+    ],
+    "chair": "",
+    "speakers": "Chris Atkinson, Researcher Developer;  DrJemma Kerns, Dr Hannah Stewart and Dr Rachel Platel",
+    "location": "Library Exhibitions and Events Space",
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572198"
   },
   {
     "id": "tuesday-s3",
@@ -172,9 +189,10 @@ window.RCW_EVENTS = [
     "dayLabel": "Wednesday 30th September",
     "slot": "Session One",
     "time": "09:30–11:00",
-    "title": "Launch of EDI Research Hub",
-    "abstract": "",
+    "title": "Launch of the Lancaster University EDI Research Hub",
+    "abstract": "You are warmly invited to the launch of Lancaster's EDI Research Hub. \n\nWe will explore some initial aims for the Hub:\n- To connect expertise, research, practice and lived experience across the institution\n- To enhance existing EDI-related activity rather than duplicating current groups and networks\n- To create a cross-cutting initiative that engages academic and professional staff, PGRs, students and external partners \n- To facilitate knowledge sharing, collaboration and mentorship\n- To strengthen Lancaster's leadership in inclusive research culture and evidence-informed EDI practice\n- To build a stronger evidence base to evaluate and demonstrate the impact of EDI initiatives.",
     "themes": [
+      "gold",
       "plum"
     ],
     "chair": "Professor Kendi Guantai, Dean Culture and Inclusion",
@@ -217,37 +235,22 @@ window.RCW_EVENTS = [
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4571751"
   },
   {
-    "id": "wednesday-lunch",
-    "day": "wednesday",
-    "dayLabel": "Wednesday 30th September",
-    "slot": "Lunchtime Session",
-    "time": "12:00–13:00",
-    "title": "Talking Research: Examining Podcasts and Audio-Visual Research Outputs",
-    "abstract": "",
-    "themes": [
-      "teal",
-      "lightblue"
-    ],
-    "chair": "",
-    "speakers": "Dr Vincent Gaine",
-    "location": "POE Training Rooms 1 & 2",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574467"
-  },
-  {
-    "id": "wednesday-s3",
+    "id": "wednesday-30th-september-session-three",
     "day": "wednesday",
     "dayLabel": "Wednesday 30th September",
     "slot": "Session Three",
-    "time": "13:00–14:00",
-    "title": "Writing Retreats - Creating Space for Sociable Solitary Work",
-    "abstract": "Writing (and reading) retreats can be a great way to find focused time for research within a supportive environment. This session will showcase some different formats for retreats. You will then get the opportunity to contribute to a University Guide on Writing Retreats, intended to be published as an Open Educational Resource. Your contributions will be valued regardless of your experience (or not) in hosting/attending retreats.",
+    "time": "13:00-14:00",
+    "title": "Centre for Social Futures: Collaborative publications and creative outputs",
+    "abstract": "In this session, we build on the legacy of the Institute for Social Futures, now the FHASS Centre for Social Futures, to share our ongoing collaborative publication initiative, \"Social Futures Collective\", and creative ways to communicate and share research.\n\nThe session is open to everyone interested in sharing their experience and learning more about collaborative publications and arts-based research outputs.\n\nWe will exchange insights, examples and ideas, and discuss the thorny issue of how we can move forward with collaboration and creativity in the face of a prevailing emphasis on individual research excellence and directly measurable, traditional research outcomes.",
     "themes": [
+      "teal",
+      "lightblue",
       "coral"
     ],
-    "chair": "",
-    "speakers": "Chris Atkinson, Researcher Developer",
-    "location": "Library Exhibitions and Events Space",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572198"
+    "chair": "Dr Natasa Lackovic",
+    "speakers": "",
+    "location": "TBC",
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4591480"
   },
   {
     "id": "wednesday-s4",
@@ -296,6 +299,23 @@ window.RCW_EVENTS = [
     "speakers": "Dr Dan Craddock, Education Fellow, Reimagining Research Practices",
     "location": "Library Exhibitions and Events Space",
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4574022"
+  },
+  {
+    "id": "wednesday-lunch",
+    "day": "thursday",
+    "dayLabel": "Thursday 1st October",
+    "slot": "Lunchtime Session",
+    "time": "14:30-16:00",
+    "title": "Talking Research: Examining Podcasts and Audio-Visual Research Outputs",
+    "abstract": "Learn about podcasting at Lancaster University from colleagues who talk on topics from spies to sustainability, career reflections and the sharing of research within our community. This session discusses podcasting as part of wider conversations, challenges and opportunities of the medium, as well as a tour of the podcasting suite in Health Innovation One. \n\nDr Vincent Gaine, Lecturer in Media and Film – host of The Spy with the Blood-Tinted Glasses \nhttps://open.spotify.com/show/4mty46JjXBMof9hxyCPNKh?si=9a9cae51f5b744bd\nhttps://podcasts.apple.com/gb/podcast/school-of-arts/id1891669165\nhttps://www.youtube.com/@SoALancasterUni\n\nSpeakers:\n- Jan Bebbington and Paul Turner - hosts of Hosting Tomorrow ( https://www.lancaster.ac.uk/pentland/resources/podcast/)\n- Dan Craddock – host of the 'Reimagining Research Culture episodes', part of the This is Lancaster podcast (https://www.lancaster.ac.uk/research/this-is-lancaster-podcast)\n- Leonie Smith – host of the British Academy's 'Confessions of an ECR' podcast - https://www.thebritishacademy.ac.uk/audio-video/confessions-of-an-early-career-researcher/. \n- Helen Nuttall - host of 'Drs Confess' - https://www.lancaster.ac.uk/psychology/about-us/news/new-sponsorship-for-research-culture-podcast-d…",
+    "themes": [
+      "teal",
+      "lightblue"
+    ],
+    "chair": "Dr Vincent Gaine, Lecturer in Media and Film - – host of The Spy with the Blood-Tinted Glasses",
+    "speakers": "Jan Bebbington and Paul Turner - hosts of 'Hosting Tomorrow'; Dan Craddock – host of the 'Reimagining Research Culture episodes', 'This is Lancaster' podcast; Leonie Smith – host of the British Academy's 'Confessions of an ECR' podcast and Helen Nuttall - host of 'Drs Confess'.",
+    "location": "Health Innovation One",
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574467"
   },
   {
     "id": "thursday-lunch",
