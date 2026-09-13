@@ -139,14 +139,14 @@ window.RCW_EVENTS = [
     "dayLabel": "Tuesday 29th September",
     "slot": "Lunchtime Session",
     "time": "12:30–13:30",
-    "title": "Protecting Research Time",
-    "abstract": "",
+    "title": "Protecting and Respecting Research Time",
+    "abstract": "We will review the 10 Top Tips that were developed during the 2025 Research Culture Week session and revise them where needed. After this we will develop an strategy for implementation and support to develop these tips into meaningful action to protect research time.",
     "themes": [
       "plum",
       "coral"
     ],
     "chair": "",
-    "speakers": "Chris Atkinson, Researcher Developer;  DrJemma Kerns, Dr Hannah Stewart and Dr Rachel Platel",
+    "speakers": "DrJemma Kerns and Dr Rachel Platel",
     "location": "Library Exhibitions and Events Space",
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4572198"
   },
@@ -249,7 +249,7 @@ window.RCW_EVENTS = [
     ],
     "chair": "Dr Natasa Lackovic",
     "speakers": "",
-    "location": "TBC",
+    "location": "Library Exhibitions and Events Space",
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4591480"
   },
   {
@@ -301,23 +301,6 @@ window.RCW_EVENTS = [
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4574022"
   },
   {
-    "id": "wednesday-lunch",
-    "day": "thursday",
-    "dayLabel": "Thursday 1st October",
-    "slot": "Lunchtime Session",
-    "time": "14:30-16:00",
-    "title": "Talking Research: Examining Podcasts and Audio-Visual Research Outputs",
-    "abstract": "Learn about podcasting at Lancaster University from colleagues who talk on topics from spies to sustainability, career reflections and the sharing of research within our community. This session discusses podcasting as part of wider conversations, challenges and opportunities of the medium, as well as a tour of the podcasting suite in Health Innovation One. \n\nDr Vincent Gaine, Lecturer in Media and Film – host of The Spy with the Blood-Tinted Glasses \nhttps://open.spotify.com/show/4mty46JjXBMof9hxyCPNKh?si=9a9cae51f5b744bd\nhttps://podcasts.apple.com/gb/podcast/school-of-arts/id1891669165\nhttps://www.youtube.com/@SoALancasterUni\n\nSpeakers:\n- Jan Bebbington and Paul Turner - hosts of Hosting Tomorrow ( https://www.lancaster.ac.uk/pentland/resources/podcast/)\n- Dan Craddock – host of the 'Reimagining Research Culture episodes', part of the This is Lancaster podcast (https://www.lancaster.ac.uk/research/this-is-lancaster-podcast)\n- Leonie Smith – host of the British Academy's 'Confessions of an ECR' podcast - https://www.thebritishacademy.ac.uk/audio-video/confessions-of-an-early-career-researcher/. \n- Helen Nuttall - host of 'Drs Confess' - https://www.lancaster.ac.uk/psychology/about-us/news/new-sponsorship-for-research-culture-podcast-d…",
-    "themes": [
-      "teal",
-      "lightblue"
-    ],
-    "chair": "Dr Vincent Gaine, Lecturer in Media and Film - – host of The Spy with the Blood-Tinted Glasses",
-    "speakers": "Jan Bebbington and Paul Turner - hosts of 'Hosting Tomorrow'; Dan Craddock – host of the 'Reimagining Research Culture episodes', 'This is Lancaster' podcast; Leonie Smith – host of the British Academy's 'Confessions of an ECR' podcast and Helen Nuttall - host of 'Drs Confess'.",
-    "location": "Health Innovation One",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574467"
-  },
-  {
     "id": "thursday-lunch",
     "day": "thursday",
     "dayLabel": "Thursday 1st October",
@@ -339,8 +322,8 @@ window.RCW_EVENTS = [
     "dayLabel": "Thursday 1st October",
     "slot": "Lunchtime Session",
     "time": "12:30-14:00",
-    "title": "Researcher-Only Session: Planning Your Year Ahead",
-    "abstract": "This informal and interactive session is a chance to step away from your day-to-day work and think about what you'd like to work towards, what might help, and how the RCaD group could support you.\n\nWe will share ideas and resources, and talk about some of the opportunities and challenges research-only staff are facing.\n\nIt is also a chance to tell us what kinds of development opportunities or support would be most useful, so we can shape future activity around what people actually want and need.\n\nFree food and refreshments will be provided!",
+    "title": "Research-Only Staff Session: Planning Your Year Ahead",
+    "abstract": "This informal and interactive session is a chance to step away from your day-to-day work and think about what you'd like to work towards, what might help, and how your Researcher Career and Development (RCaD) group could support you.\n\nWe will share ideas and resources, and talk about some of the opportunities and challenges research-only staff are facing.\n\nIt is also a chance to tell us what kinds of development opportunities or support would be most useful, so we can shape future activity around what people actually want and need.\n\nFree food and refreshments will be provided!",
     "themes": [
       "plum",
       "coral"
@@ -370,7 +353,7 @@ window.RCW_EVENTS = [
     "id": "thursday-s4",
     "day": "thursday",
     "dayLabel": "Thursday 1st October",
-    "slot": "Session Four",
+    "slot": "Session Three",
     "time": "14:00–15:30",
     "title": "AI in Research: Ethics, Opportunities and Emerging Governance",
     "abstract": "This interactive session brings together a range of perspectives on the rapidly evolving role of AI in research, from the foundations of large language models and institutional GenAI guidance to research management, and researchers’ experiences of using AI in various disciplines.\n\nThe session will use an interactive research carousel format. Participants will join small-group discussions led by the expert speaker, rotating between topics. \n\nCome along to share experiences, ask questions, and explore what responsible AI use in research might look like. All research students, academic and support staff are very welcome.",
@@ -381,5 +364,22 @@ window.RCW_EVENTS = [
     "speakers": "Dr Yingnian Tao, Senior Research Associate, Reimagining Research Practices; Professor Chris Nemeth, Co-Director Data Science and AI Institute; Dr Guillermo Perez Algorta, Senior Lecturer in Health Research, FHM and Mark Ryan, Associate Lecturer Research in LUMS.",
     "location": "Library Exhibitions and Events Space",
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4574469"
+  },
+  {
+    "id": "wednesday-lunch",
+    "day": "thursday",
+    "dayLabel": "Thursday 1st October",
+    "slot": "Session Four",
+    "time": "14:30-16:00",
+    "title": "Talking Research: Examining Podcasts and Audio-Visual Research Outputs",
+    "abstract": "Learn about podcasting at Lancaster University from colleagues who talk on topics from spies to sustainability, career reflections and the sharing of research within our community. This session discusses podcasting as part of wider conversations, challenges and opportunities of the medium, as well as a tour of the podcasting suite in Health Innovation One. \n\nDr Vincent Gaine, Lecturer in Media and Film – host of The Spy with the Blood-Tinted Glasses \nhttps://open.spotify.com/show/4mty46JjXBMof9hxyCPNKh?si=9a9cae51f5b744bd\nhttps://podcasts.apple.com/gb/podcast/school-of-arts/id1891669165\nhttps://www.youtube.com/@SoALancasterUni\n\nSpeakers:\n- Paul Turner - host of Hosting Tomorrow (with Jan Bebbington, https://www.lancaster.ac.uk/pentland/resources/podcast/)\n- Dan Craddock – host of the 'Reimagining Research Culture episodes', part of the This is Lancaster podcast (https://www.lancaster.ac.uk/research/this-is-lancaster-podcast)\n- Leonie Smith – host of the British Academy's 'Confessions of an ECR' podcast - https://www.thebritishacademy.ac.uk/audio-video/confessions-of-an-early-career-researcher/. \n- Helen Nuttall - host of 'Drs Confess' - https://www.lancaster.ac.uk/psychology/about-us/news/new-sponsorship-for-research-culture-podcast-d…",
+    "themes": [
+      "teal",
+      "lightblue"
+    ],
+    "chair": "Dr Vincent Gaine, Lecturer in Media and Film - – host of The Spy with the Blood-Tinted Glasses",
+    "speakers": "Paul Turner - host of 'Hosting Tomorrow'; Dan Craddock – host of the 'Reimagining Research Culture episodes', 'This is Lancaster' podcast; Leonie Smith – host of the British Academy's 'Confessions of an ECR' podcast and Helen Nuttall - host of 'Drs Confess'.",
+    "location": "A14 Innovation Lab, Health Innovation One",
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574467"
   }
 ];
