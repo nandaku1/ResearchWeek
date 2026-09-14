@@ -360,8 +360,8 @@ window.RCW_EVENTS = [
     "themes": [
       "teal"
     ],
-    "chair": "",
-    "speakers": "Dr Yingnian Tao, Senior Research Associate, Reimagining Research Practices; Professor Chris Nemeth, Co-Director Data Science and AI Institute; Dr Guillermo Perez Algorta, Senior Lecturer in Health Research, FHM; Mark Ryan, Associate Lecturer Research in LUMS; Dr Odette Dewhurst, Senior Research Development Manager, RES and Dr Joseph Lindley, Senior Research Fellow, School of Arts, FHASS",
+    "chair": "Dr Yingnian Tao, Senior Research Associate, Reimagining Research Practices",
+    "speakers": "Professor Chris Nemeth, Co-Director Data Science and AI Institute; Dr Guillermo Perez Algorta, Senior Lecturer in Health Research, FHM; Mark Ryan, Associate Lecturer Research in LUMS; Dr Odette Dewhurst, Senior Research Development Manager, RES and Dr Joseph Lindley, Senior Research Fellow, School of Arts, FHASS",
     "location": "Library Exhibitions and Events Space",
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4574469"
   },
