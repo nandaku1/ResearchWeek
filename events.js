@@ -235,6 +235,22 @@ window.RCW_EVENTS = [
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4571751"
   },
   {
+    "id": "wednesday-30th-september-lunchtime-session",
+    "day": "wednesday",
+    "dayLabel": "Wednesday 30th September",
+    "slot": "Lunchtime Session",
+    "time": "12:00–13:00",
+    "title": "Centre for Family Business",
+    "abstract": "",
+    "themes": [
+      "lightblue"
+    ],
+    "chair": "Dr Allan Discua-Cruz, Director Centre for Family Business, LUMS",
+    "speakers": "",
+    "location": "TBC",
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4593728"
+  },
+  {
     "id": "wednesday-30th-september-session-three",
     "day": "wednesday",
     "dayLabel": "Wednesday 30th September",
