@@ -6,12 +6,12 @@ window.RCW_EVENTS = [
     "slot": "Session One",
     "time": "09:30–11:00",
     "title": "RCW Welcome & ReCAP 2024-2028 Progress Update",
-    "abstract": "Our third Research Culture Week will be opened by Professor Rebecca Lingwood, Deputy Vice Chancellor at Lancaster University. Professor Nicholas Race, Director of Research Culture, will share an overview of progress against our Research-excellence Culture Action Plan (2024-2028) as well as opportunities and plans for the future.\n\nJoin the Researcher Development Panel for an inspiring conversation about building a successful and rewarding career. Panel members will share practical advice on professional development, navigating career transitions, developing leadership skills, and making the most of networking opportunities. Whether you are at the start of your career or considering your next step, this interactive session will offer valuable insights and fresh perspectives. \n\nWe are delighted to have the following panel members, with Dr Elizabeth Adams expertly facilitating the conversation: \n\n•\tDr Ed Austin, Research Fellow/RCAD Chair in FST\n•\tDr Allan Discua Cruz, Senior Lecturer \n•\tDr Amy Mayfield, Research Culture Manager\n•\tDr Swayamshree Mishra, Research Associate\n•\tProfessor Corinna Peniston-Bird - Cross Faculty Associate Dean for Doctoral Studies\n•\tCatherine Wearing, Senior Analytical Research Technician",
+    "abstract": "Our third Research Culture Week will be opened by Professor Rebecca Lingwood, Deputy Vice Chancellor at Lancaster University. Professor Nicholas Race, Director of Research Culture, will share an overview of progress against our Research-excellence Culture Action Plan (2024-2028) as well as opportunities and plans for the future.\n\nWe will then hear our Researcher Development Panel hold an inspiring conversation about building a successful and rewarding career. Panel members will share practical advice on professional development, navigating career transitions, developing leadership skills, and making the most of networking opportunities. Whether you are at the start of your career or considering your next step, this interactive session will offer valuable insights and fresh perspectives. \n\nWe are delighted to have the following panel members, with Dr Elizabeth Adams expertly facilitating the conversation: \n\n•\tDr Ed Austin, Research Fellow/RCAD Chair in FST\n•\tDr Allan Discua Cruz, Senior Lecturer \n•\tDr Amy Mayfield, Research Culture Manager\n•\tDr Swayamshree Mishra, Research Associate\n•\tProfessor Corinna Peniston-Bird - Cross Faculty Associate Dean for Doctoral Studies\n•\tCatherine Wearing, Senior Analytical Research Technician",
     "themes": [
       "gold"
     ],
-    "chair": "Professor Rebecca Lingwood, DVC and Professor Nick Race, Director Research Culture",
-    "speakers": "Researcher Development Panel, Chaired by Elizabeth Adams, Scafell Coaching",
+    "chair": "Professor Rebecca Lingwood, Deputy Vice Chancellor and Professor Nick Race, Director Research Culture",
+    "speakers": "Researcher Development Panel - Chaired by Elizabeth Adams, Scafell Coaching",
     "location": "Margaret Fell Lecture Theatre",
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4571657"
   },
@@ -97,7 +97,7 @@ window.RCW_EVENTS = [
     ],
     "chair": "Professor Jo Rycroft-Malone, Pro-Vice Chancellor Research and Enterprise",
     "speakers": "Becky Gordon, Head of Research Quality and Policy\nProfessor Leon Cruickshank",
-    "location": "Management School (TBD)",
+    "location": "LT16 (Robinson) Management School, West Pavilion",
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4572200"
   },
   {
@@ -247,7 +247,7 @@ window.RCW_EVENTS = [
       "lightblue",
       "coral"
     ],
-    "chair": "Dr Natasa Lackovic",
+    "chair": "Dr Nataša Lackovic",
     "speakers": "",
     "location": "Library Exhibitions and Events Space",
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4591480"
@@ -361,7 +361,7 @@ window.RCW_EVENTS = [
       "teal"
     ],
     "chair": "",
-    "speakers": "Dr Yingnian Tao, Senior Research Associate, Reimagining Research Practices; Professor Chris Nemeth, Co-Director Data Science and AI Institute; Dr Guillermo Perez Algorta, Senior Lecturer in Health Research, FHM and Mark Ryan, Associate Lecturer Research in LUMS.",
+    "speakers": "Dr Yingnian Tao, Senior Research Associate, Reimagining Research Practices; Professor Chris Nemeth, Co-Director Data Science and AI Institute; Dr Guillermo Perez Algorta, Senior Lecturer in Health Research, FHM; Mark Ryan, Associate Lecturer Research in LUMS; Dr Odette Dewhurst, Senior Research Development Manager, RES and Dr Joseph Lindley, Senior Research Fellow, School of Arts, FHASS",
     "location": "Library Exhibitions and Events Space",
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4574469"
   },
@@ -370,7 +370,7 @@ window.RCW_EVENTS = [
     "day": "thursday",
     "dayLabel": "Thursday 1st October",
     "slot": "Session Four",
-    "time": "14:30-16:00",
+    "time": "15:30-17:00",
     "title": "Talking Research: Examining Podcasts and Audio-Visual Research Outputs",
     "abstract": "Learn about podcasting at Lancaster University from colleagues who talk on topics from spies to sustainability, career reflections and the sharing of research within our community. This session discusses podcasting as part of wider conversations, challenges and opportunities of the medium, as well as a tour of the podcasting suite in Health Innovation One. \n\nDr Vincent Gaine, Lecturer in Media and Film – host of The Spy with the Blood-Tinted Glasses \nhttps://open.spotify.com/show/4mty46JjXBMof9hxyCPNKh?si=9a9cae51f5b744bd\nhttps://podcasts.apple.com/gb/podcast/school-of-arts/id1891669165\nhttps://www.youtube.com/@SoALancasterUni\n\nSpeakers:\n- Paul Turner - host of Hosting Tomorrow (with Jan Bebbington, https://www.lancaster.ac.uk/pentland/resources/podcast/)\n- Dan Craddock – host of the 'Reimagining Research Culture episodes', part of the This is Lancaster podcast (https://www.lancaster.ac.uk/research/this-is-lancaster-podcast)\n- Leonie Smith – host of the British Academy's 'Confessions of an ECR' podcast - https://www.thebritishacademy.ac.uk/audio-video/confessions-of-an-early-career-researcher/. \n- Helen Nuttall - host of 'Drs Confess' - https://www.lancaster.ac.uk/psychology/about-us/news/new-sponsorship-for-research-culture-podcast-d…",
     "themes": [
