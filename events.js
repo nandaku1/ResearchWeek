@@ -240,14 +240,14 @@ window.RCW_EVENTS = [
     "dayLabel": "Wednesday 30th September",
     "slot": "Lunchtime Session",
     "time": "12:00–13:00",
-    "title": "Centre for Family Business",
-    "abstract": "",
+    "title": "Family Business: Challenging Myths and Misconceptions",
+    "abstract": "This session explores the latest research on the unique dynamics of family businesses, critically examining prevalent myths and widespread misconceptions. By debunking common stereotypes, participants will gain fresh insights into recent studies that deal with aspects such as strategic management, succession planning, and the distinct advantages that allow them to remain the most widespread and enduring business form worldwide.",
     "themes": [
       "lightblue"
     ],
     "chair": "Dr Allan Discua-Cruz, Director Centre for Family Business, LUMS",
-    "speakers": "",
-    "location": "TBC",
+    "speakers": "Bingbing Ge, Lecturer in Entrepreneurship and Strategy; Anis Alichi, Doctoral Research Associate in Entrepreneurship and Strategy and Professor Sarah Jack, Distinguished Professor Entrepreneurship and Strategy.",
+    "location": "Library Exhibitions and Events Space",
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4593728"
   },
   {
