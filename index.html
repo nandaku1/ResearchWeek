@@ -231,6 +231,11 @@
       <input type="text" id="event-location">
     </div>
 
+    <label class="event-hybrid-picker">
+      <input type="checkbox" id="event-hybrid">
+      This session is hybrid (in-person + online)
+    </label>
+
     <div class="field">
       <label for="event-libcal">LibCal registration link <span class="field__optional">(optional — leave blank to show "Registration opening soon")</span></label>
       <input type="url" id="event-libcal" placeholder="https://lancaster-uk.libcal.com/event/…">
@@ -252,6 +257,7 @@
     <div class="event-card__body">
       <p class="event-card__time"><span class="event-card__day"></span><span class="event-card__sep"> · </span><span class="event-card__time-value"></span></p>
       <h3 class="event-card__title"></h3>
+      <span class="event-card__hybrid-badge" hidden>Hybrid — join online</span>
       <div class="event-card__meta">
         <p class="event-card__meta-row event-card__meta-row--chair"><span class="event-card__meta-label">Chair:</span> <span class="event-card__meta-value"></span></p>
         <p class="event-card__meta-row event-card__meta-row--speakers"><span class="event-card__meta-label">Speakers:</span> <span class="event-card__meta-value"></span></p>

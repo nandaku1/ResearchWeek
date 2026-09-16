@@ -128,6 +128,7 @@ what plain JSON would look like:
   "chair": "…",
   "speakers": "…",
   "location": "…",
+  "hybrid": false,
   "libcalUrl": "https://lancaster-uk.libcal.com/event/…"
 }
 ```
@@ -137,7 +138,8 @@ session can address more than one pillar. The admin form requires at least one.
 `libcalUrl` is `null` when no registration link exists yet. Empty fields (`chair`,
 `speakers`, `location`, `abstract`) are allowed and simply omitted from the card
 display. `abstract`, where present, renders as a collapsed "Abstract" disclosure on
-the card.
+the card. `hybrid` is a boolean set via a checkbox in the admin form — when true, the
+card shows an outlined "Hybrid — join online" badge under the title.
 
 ## License
 

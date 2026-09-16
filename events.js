@@ -13,7 +13,8 @@ window.RCW_EVENTS = [
     "chair": "Professor Rebecca Lingwood, Deputy Vice Chancellor and Professor Nick Race, Director Research Culture",
     "speakers": "Researcher Development Panel - Chaired by Elizabeth Adams, Scafell Coaching",
     "location": "Margaret Fell Lecture Theatre",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4571657"
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4571657",
+    "hybrid": false
   },
   {
     "id": "monday-s2",
@@ -31,7 +32,8 @@ window.RCW_EVENTS = [
     "chair": "Professor Rebecca Lingwood, DVC",
     "speakers": "Becky Gordon, Head of Research Quality and Policy; Louise Zambianchi, Head of Open Research; Professor Carlos Lopez-Galviz, School of Arts; Catriona Gold, Project Manager.",
     "location": "Margaret Fell Lecture Theatre",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574110"
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574110",
+    "hybrid": false
   },
   {
     "id": "monday-lunch",
@@ -49,7 +51,8 @@ window.RCW_EVENTS = [
     "chair": "",
     "speakers": "Jess Shaw, Public Engagement Manager",
     "location": "Margaret Fell Lecture Theatre",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572212"
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572212",
+    "hybrid": false
   },
   {
     "id": "monday-s3",
@@ -66,7 +69,8 @@ window.RCW_EVENTS = [
     "chair": "Professor Suzanne Ost (Academic Lead) or Dr Leonie Smith (ECR Lead)",
     "speakers": "Pam Forster, Project Manager of the British Academy's Early Career Researcher Network, North West North Wales (BA ECRN NWNW) Cluster",
     "location": "Library Exhibitions and Events Space",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574112"
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574112",
+    "hybrid": false
   },
   {
     "id": "monday-s4",
@@ -82,7 +86,8 @@ window.RCW_EVENTS = [
     "chair": "",
     "speakers": "Tom Morley, Open Access Manager, Joanne Fitzpatrick, Research Data Manager and Jess Shaw, Public Engagement Manager",
     "location": "Library Exhibitions and Events Space",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574021"
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574021",
+    "hybrid": false
   },
   {
     "id": "tuesday-s1",
@@ -98,7 +103,8 @@ window.RCW_EVENTS = [
     "chair": "Professor Jo Rycroft-Malone, Pro-Vice Chancellor Research and Enterprise",
     "speakers": "Becky Gordon, Head of Research Quality and Policy\nProfessor Leon Cruickshank",
     "location": "LT16 (Robinson) Management School, West Pavilion",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572200"
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572200",
+    "hybrid": false
   },
   {
     "id": "tuesday-s2",
@@ -115,7 +121,8 @@ window.RCW_EVENTS = [
     "chair": "",
     "speakers": "Dr Dan Craddock, Education Fellow, Reimagining Research Practices",
     "location": "Library Exhibitions and Events Space",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574010"
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574010",
+    "hybrid": false
   },
   {
     "id": "tuesday-lunch",
@@ -131,7 +138,8 @@ window.RCW_EVENTS = [
     "chair": "",
     "speakers": "Dr Joe Lindley",
     "location": "A36 Imagination Lab, LICA",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574111"
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574111",
+    "hybrid": false
   },
   {
     "id": "wednesday-s3",
@@ -148,7 +156,8 @@ window.RCW_EVENTS = [
     "chair": "",
     "speakers": "DrJemma Kerns and Dr Rachel Platel",
     "location": "Library Exhibitions and Events Space",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572198"
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572198",
+    "hybrid": false
   },
   {
     "id": "tuesday-s3",
@@ -164,7 +173,8 @@ window.RCW_EVENTS = [
     "chair": "",
     "speakers": "Olivia Carter",
     "location": "POE Training Rooms (TBC)",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572196"
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572196",
+    "hybrid": false
   },
   {
     "id": "tuesday-s4",
@@ -181,7 +191,8 @@ window.RCW_EVENTS = [
     "chair": "",
     "speakers": "Jess Shaw, Public Engagement Manager, Dr Odette Dewhurst, Senior Research Development Manager, Chris Atkinson, Researcher Developer",
     "location": "Library Exhibitions and Events Space",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572199"
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572199",
+    "hybrid": false
   },
   {
     "id": "wednesday-s1",
@@ -198,7 +209,8 @@ window.RCW_EVENTS = [
     "chair": "Professor Kendi Guantai, Dean Culture and Inclusion",
     "speakers": "Panel TBD",
     "location": "Library Exhibitions and Events Space",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572204"
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572204",
+    "hybrid": false
   },
   {
     "id": "wednesday-30th-september-session-one",
@@ -216,7 +228,8 @@ window.RCW_EVENTS = [
     "chair": "",
     "speakers": "Professor Julia Gillen and Professor Uta Papen",
     "location": "POE Training Rooms 1 & 2",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4578941"
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4578941",
+    "hybrid": false
   },
   {
     "id": "wednesday-s2",
@@ -232,7 +245,8 @@ window.RCW_EVENTS = [
     "chair": "",
     "speakers": "Dr Elsahn Ziad, Dr Simone Corsi, Professor Sarah Jack",
     "location": "Library Exhibitions and Events Space",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4571751"
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4571751",
+    "hybrid": false
   },
   {
     "id": "wednesday-30th-september-lunchtime-session",
@@ -248,7 +262,8 @@ window.RCW_EVENTS = [
     "chair": "Dr Allan Discua-Cruz, Director Centre for Family Business, LUMS",
     "speakers": "Bingbing Ge, Lecturer in Entrepreneurship and Strategy; Anis Alichi, Doctoral Research Associate in Entrepreneurship and Strategy and Professor Sarah Jack, Distinguished Professor Entrepreneurship and Strategy.",
     "location": "Library Exhibitions and Events Space",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4593728"
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4593728",
+    "hybrid": false
   },
   {
     "id": "wednesday-30th-september-session-three",
@@ -266,7 +281,8 @@ window.RCW_EVENTS = [
     "chair": "Dr Nataša Lackovic",
     "speakers": "",
     "location": "Library Exhibitions and Events Space",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4591480"
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4591480",
+    "hybrid": false
   },
   {
     "id": "wednesday-s4",
@@ -282,7 +298,8 @@ window.RCW_EVENTS = [
     "chair": "",
     "speakers": "Olivia Carter",
     "location": "POE Training Rooms (TBC)",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572197"
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572197",
+    "hybrid": false
   },
   {
     "id": "thursday-s1",
@@ -298,7 +315,8 @@ window.RCW_EVENTS = [
     "chair": "Professor Corinna Peniston Bird, Cross-Faculty Dean for Postgraduate Studies",
     "speakers": "",
     "location": "Library Exhibitions and Events Space",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574113"
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574113",
+    "hybrid": false
   },
   {
     "id": "thursday-s2",
@@ -314,7 +332,8 @@ window.RCW_EVENTS = [
     "chair": "",
     "speakers": "Dr Dan Craddock, Education Fellow, Reimagining Research Practices",
     "location": "Library Exhibitions and Events Space",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574022"
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574022",
+    "hybrid": false
   },
   {
     "id": "thursday-lunch",
@@ -330,7 +349,8 @@ window.RCW_EVENTS = [
     "chair": "",
     "speakers": "Dr Zoe Detko, Head of Sustainability",
     "location": "Library Exhibitions and Events Space",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574468"
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574468",
+    "hybrid": false
   },
   {
     "id": "thursday-1st-october-lunchtime-session",
@@ -347,7 +367,8 @@ window.RCW_EVENTS = [
     "chair": "",
     "speakers": "",
     "location": "POE Training Rooms 1 & 2",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4580892"
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4580892",
+    "hybrid": false
   },
   {
     "id": "thursday-s3",
@@ -363,7 +384,8 @@ window.RCW_EVENTS = [
     "chair": "",
     "speakers": "Dr Nuri Kwon, Senior Research Associate, Reimagining Research Practices",
     "location": "Library Exhibitions and Events Space",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574023"
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574023",
+    "hybrid": false
   },
   {
     "id": "thursday-s4",
@@ -379,14 +401,15 @@ window.RCW_EVENTS = [
     "chair": "Dr Yingnian Tao, Senior Research Associate, Reimagining Research Practices",
     "speakers": "Professor Chris Nemeth, Co-Director Data Science and AI Institute; Dr Guillermo Perez Algorta, Senior Lecturer in Health Research, FHM; Mark Ryan, Associate Lecturer Research in LUMS; Dr Odette Dewhurst, Senior Research Development Manager, RES and Dr Joseph Lindley, Senior Research Fellow, School of Arts, FHASS",
     "location": "Library Exhibitions and Events Space",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574469"
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574469",
+    "hybrid": false
   },
   {
     "id": "wednesday-lunch",
     "day": "thursday",
     "dayLabel": "Thursday 1st October",
     "slot": "Session Four",
-    "time": "15:30-17:00",
+    "time": "15:30–17:00",
     "title": "Talking Research: Examining Podcasts and Audio-Visual Research Outputs",
     "abstract": "Learn about podcasting at Lancaster University from colleagues who talk on topics from spies to sustainability, career reflections and the sharing of research within our community. This session discusses podcasting as part of wider conversations, challenges and opportunities of the medium, as well as a tour of the podcasting suite in Health Innovation One. \n\nDr Vincent Gaine, Lecturer in Media and Film – host of The Spy with the Blood-Tinted Glasses \nhttps://open.spotify.com/show/4mty46JjXBMof9hxyCPNKh?si=9a9cae51f5b744bd\nhttps://podcasts.apple.com/gb/podcast/school-of-arts/id1891669165\nhttps://www.youtube.com/@SoALancasterUni\n\nSpeakers:\n- Paul Turner - host of Hosting Tomorrow (with Jan Bebbington, https://www.lancaster.ac.uk/pentland/resources/podcast/)\n- Dan Craddock – host of the 'Reimagining Research Culture episodes', part of the This is Lancaster podcast (https://www.lancaster.ac.uk/research/this-is-lancaster-podcast)\n- Leonie Smith – host of the British Academy's 'Confessions of an ECR' podcast - https://www.thebritishacademy.ac.uk/audio-video/confessions-of-an-early-career-researcher/. \n- Helen Nuttall - host of 'Drs Confess' - https://www.lancaster.ac.uk/psychology/about-us/news/new-sponsorship-for-research-culture-podcast-d…",
     "themes": [
@@ -395,7 +418,8 @@ window.RCW_EVENTS = [
     ],
     "chair": "Dr Vincent Gaine, Lecturer in Media and Film - – host of The Spy with the Blood-Tinted Glasses",
     "speakers": "Paul Turner - host of 'Hosting Tomorrow'; Dan Craddock – host of the 'Reimagining Research Culture episodes', 'This is Lancaster' podcast; Leonie Smith – host of the British Academy's 'Confessions of an ECR' podcast and Helen Nuttall - host of 'Drs Confess'.",
-    "location": "A14 Innovation Lab, Health Innovation One",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574467"
+    "location": "HI One foyer",
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574467",
+    "hybrid": false
   }
 ];

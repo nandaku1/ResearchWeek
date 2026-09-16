@@ -106,6 +106,7 @@
       $('.event-card__day', node).textContent = dayLabelShort(ev.day);
       $('.event-card__time-value', node).textContent = ev.time;
       $('.event-card__title', node).textContent = ev.title;
+      $('.event-card__hybrid-badge', node).hidden = !ev.hybrid;
 
       setMetaRow(node, 'chair', ev.chair);
       setMetaRow(node, 'speakers', ev.speakers);
@@ -293,6 +294,7 @@
     $('#event-chair').value = ev ? ev.chair : '';
     $('#event-speakers').value = ev ? ev.speakers : '';
     $('#event-location').value = ev ? ev.location : '';
+    $('#event-hybrid').checked = ev ? Boolean(ev.hybrid) : false;
     libcalInput.value = ev ? ev.libcalUrl || '' : '';
     libcalInput.setAttribute('aria-invalid', 'false');
     eventDialog.showModal();
@@ -364,6 +366,7 @@
       chair: $('#event-chair').value.trim(),
       speakers: $('#event-speakers').value.trim(),
       location: $('#event-location').value.trim(),
+      hybrid: $('#event-hybrid').checked,
       libcalUrl: libcalUrl || null,
     };
 
