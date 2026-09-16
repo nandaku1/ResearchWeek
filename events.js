@@ -95,7 +95,7 @@ window.RCW_EVENTS = [
     "dayLabel": "Tuesday 29th September",
     "slot": "Session One",
     "time": "09:30–11:00",
-    "title": "Strategy People and Research Environment (SPRE) Institution Level Statement (ILS) Strategy Session",
+    "title": "REF2029 Strategy People and Research Environment (SPRE) Institution Level Statement (ILS) Strategy Session",
     "abstract": "In this session we will share the findings and process to date in developing an outline draft of the Institution Level SPRE statement for REF2029. \n\nWe will review the five areas of the statement, in the context of our research environments and cultures at Lancaster and explore and celebrate our strengths and explore and discuss how we could strengthen areas identified for enhancement.",
     "themes": [
       "gold"
@@ -103,8 +103,8 @@ window.RCW_EVENTS = [
     "chair": "Professor Jo Rycroft-Malone, Pro-Vice Chancellor Research and Enterprise",
     "speakers": "Becky Gordon, Head of Research Quality and Policy\nProfessor Leon Cruickshank",
     "location": "LT16 (Robinson) Management School, West Pavilion",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572200",
-    "hybrid": false
+    "hybrid": false,
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572200"
   },
   {
     "id": "tuesday-s2",
