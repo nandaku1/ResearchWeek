@@ -201,7 +201,7 @@ window.RCW_EVENTS = [
     "slot": "Session One",
     "time": "09:30–11:00",
     "title": "Launch of the Lancaster University EDI Research Hub",
-    "abstract": "You are warmly invited to the launch of Lancaster's EDI Research Hub. \n\nWe will explore some initial aims for the Hub:\n- To connect expertise, research, practice and lived experience across the institution\n- To enhance existing EDI-related activity rather than duplicating current groups and networks\n- To create a cross-cutting initiative that engages academic and professional staff, PGRs, students and external partners \n- To facilitate knowledge sharing, collaboration and mentorship\n- To strengthen Lancaster's leadership in inclusive research culture and evidence-informed EDI practice\n- To build a stronger evidence base to evaluate and demonstrate the impact of EDI initiatives.",
+    "abstract": "You are warmly invited to the launch of Lancaster's EDI Research Hub.\n\nThe launch will be opened by Professor Kendi Guantai, Dean for Culture and Inclusion. We will then hear from two speakers about exemplary EDI projects and practices taking place at Lancaster: Dr Sophie Alkhaled will introduce the 'Guide to Integrating Gender-Awareness and Inclusivity in Research and Innovation (hard copies will be available) from the H2020 Targeted MPI Project followed by Phil Cheeseman, Associate Director of Teaching and Engagement in the Library. \n\nFollowing this we will explore some of the initial aims for the Hub:\nWe will explore some initial aims for the Hub:\n- To connect expertise, research, practice and lived experience across the institution\n- To enhance existing EDI-related activity rather than duplicating current groups and networks\n- To create a cross-cutting initiative that engages academic and professional staff, PGRs, students and external partners \n- To facilitate knowledge sharing, collaboration and mentorship\n- To strengthen Lancaster's leadership in inclusive research culture and evidence-informed EDI practice\n- To build a stronger evidence base to evaluate and demonstrate the impact of EDI initiatives.",
     "themes": [
       "gold",
       "plum"
@@ -209,8 +209,8 @@ window.RCW_EVENTS = [
     "chair": "Professor Kendi Guantai, Dean Culture and Inclusion",
     "speakers": "Panel TBD",
     "location": "Library Exhibitions and Events Space",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572204",
-    "hybrid": false
+    "hybrid": false,
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572204"
   },
   {
     "id": "wednesday-30th-september-session-one",
@@ -400,9 +400,9 @@ window.RCW_EVENTS = [
     ],
     "chair": "Dr Yingnian Tao, Senior Research Associate, Reimagining Research Practices",
     "speakers": "Professor Chris Nemeth, Co-Director Data Science and AI Institute; Dr Guillermo Perez Algorta, Senior Lecturer in Health Research, FHM; Mark Ryan, Associate Lecturer Research in LUMS; Dr Odette Dewhurst, Senior Research Development Manager, RES and Dr Joseph Lindley, Senior Research Fellow, School of Arts, FHASS",
-    "location": "Library Exhibitions and Events Space",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574469",
-    "hybrid": false
+    "location": "LT19, West Pavilion, Lancaster University Management School",
+    "hybrid": false,
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574469"
   },
   {
     "id": "wednesday-lunch",
@@ -416,10 +416,10 @@ window.RCW_EVENTS = [
       "teal",
       "lightblue"
     ],
-    "chair": "Dr Vincent Gaine, Lecturer in Media and Film - – host of The Spy with the Blood-Tinted Glasses",
+    "chair": "Dr Vincent Gaine, Lecturer in Media and Film - host of The Spy with the Blood-Tinted Glasses",
     "speakers": "Paul Turner - host of 'Hosting Tomorrow'; Dan Craddock – host of the 'Reimagining Research Culture episodes', 'This is Lancaster' podcast; Leonie Smith – host of the British Academy's 'Confessions of an ECR' podcast and Helen Nuttall - host of 'Drs Confess'.",
-    "location": "HI One foyer",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574467",
-    "hybrid": false
+    "location": "A14 Innovation Lab, Health Innovation One",
+    "hybrid": false,
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574467"
   }
 ];
