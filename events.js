@@ -13,8 +13,8 @@ window.RCW_EVENTS = [
     "chair": "Professor Rebecca Lingwood, Deputy Vice Chancellor and Professor Nick Race, Director Research Culture",
     "speakers": "Researcher Development Panel - Chaired by Elizabeth Adams, Scafell Coaching",
     "location": "Margaret Fell Lecture Theatre",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4571657",
-    "hybrid": false
+    "hybrid": true,
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4571657"
   },
   {
     "id": "monday-s2",
@@ -32,8 +32,8 @@ window.RCW_EVENTS = [
     "chair": "Professor Rebecca Lingwood, DVC",
     "speakers": "Becky Gordon, Head of Research Quality and Policy; Louise Zambianchi, Head of Open Research; Professor Carlos Lopez-Galviz, School of Arts; Catriona Gold, Project Manager.",
     "location": "Margaret Fell Lecture Theatre",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574110",
-    "hybrid": false
+    "hybrid": true,
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574110"
   },
   {
     "id": "monday-lunch",
@@ -51,8 +51,8 @@ window.RCW_EVENTS = [
     "chair": "",
     "speakers": "Jess Shaw, Public Engagement Manager",
     "location": "Margaret Fell Lecture Theatre",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572212",
-    "hybrid": false
+    "hybrid": true,
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572212"
   },
   {
     "id": "monday-s3",
@@ -308,15 +308,15 @@ window.RCW_EVENTS = [
     "slot": "Session One",
     "time": "09:30–11:00",
     "title": "PGR Consultation",
-    "abstract": "",
+    "abstract": "In this session Corinna Peniston-Bird will introduce her new role as Cross-Faculty Associate Dean for Postgraduate Studies.\n\nThere will also be opportunity to discuss some of the issues currently under consideration, from reasonable adjustments in vivas to clarity on what ‘writing up’ involves. \n\nThe session will also be an opportunity to hear priorities in the postgraduate community in an informal discussion.",
     "themes": [
       "plum"
     ],
     "chair": "Professor Corinna Peniston Bird, Cross-Faculty Dean for Postgraduate Studies",
     "speakers": "",
     "location": "Library Exhibitions and Events Space",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574113",
-    "hybrid": false
+    "hybrid": true,
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574113"
   },
   {
     "id": "thursday-s2",
