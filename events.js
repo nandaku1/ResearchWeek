@@ -219,17 +219,17 @@ window.RCW_EVENTS = [
     "slot": "Session One",
     "time": "10:00–11:00",
     "title": "How to get your first paper published",
-    "abstract": "This in-person session is aimed at MA students and PGRs who want to get their first paper published.  We will cover key issues on writing, selecting journals, submitting papers and so on.\n\nWe will welcome your questions. This session will not be recorded.\n\nThis session will be led by Julia Gillen and Uta Papen, of the Lancaster Literacy Research Centre.",
+    "abstract": "This in-person session is aimed at MA students and PGRs who want to get their first paper published.  We will cover key issues on writing, selecting journals, submitting papers and so on.\n\nWe will welcome your questions. This session will not be recorded.\n\nThis session will be led by Professors Julia Gillen and Uta Papen, of the Lancaster Literacy Research Centre, who will be joined by Dr Chris Gaffney, Senior Lecturer in Lancaster Medical School and Aurelie Sletchen, Senior Lecturer in Economics.",
     "themes": [
       "plum",
       "teal",
       "coral"
     ],
-    "chair": "",
-    "speakers": "Professor Julia Gillen and Professor Uta Papen",
+    "chair": "Professor Julia Gillen and Professor Uta Papen",
+    "speakers": "Dr Chris Gaffney and Dr Aurelie Sletchen",
     "location": "POE Training Rooms 1 & 2",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4578941",
-    "hybrid": false
+    "hybrid": false,
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4578941"
   },
   {
     "id": "wednesday-s2",
