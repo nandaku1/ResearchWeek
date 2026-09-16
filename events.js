@@ -170,11 +170,11 @@ window.RCW_EVENTS = [
     "themes": [
       "coral"
     ],
-    "chair": "",
-    "speakers": "Olivia Carter",
+    "chair": "Olivia Carter, Assistant Organisational Developer, People and Organisational Effectiveness",
+    "speakers": "",
     "location": "POE Training Rooms (TBC)",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572196",
-    "hybrid": false
+    "hybrid": false,
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572196"
   },
   {
     "id": "tuesday-s4",
@@ -201,13 +201,13 @@ window.RCW_EVENTS = [
     "slot": "Session One",
     "time": "09:30–11:00",
     "title": "Launch of the Lancaster University EDI Research Hub",
-    "abstract": "You are warmly invited to the launch of Lancaster's EDI Research Hub.\n\nThe launch will be opened by Professor Kendi Guantai, Dean for Culture and Inclusion. We will then hear from two speakers about exemplary EDI projects and practices taking place at Lancaster: Dr Sophie Alkhaled will introduce the 'Guide to Integrating Gender-Awareness and Inclusivity in Research and Innovation (hard copies will be available) from the H2020 Targeted MPI Project followed by Phil Cheeseman, Associate Director of Teaching and Engagement in the Library. \n\nFollowing this we will explore some of the initial aims for the Hub:\nWe will explore some initial aims for the Hub:\n- To connect expertise, research, practice and lived experience across the institution\n- To enhance existing EDI-related activity rather than duplicating current groups and networks\n- To create a cross-cutting initiative that engages academic and professional staff, PGRs, students and external partners \n- To facilitate knowledge sharing, collaboration and mentorship\n- To strengthen Lancaster's leadership in inclusive research culture and evidence-informed EDI practice\n- To build a stronger evidence base to evaluate and demonstrate the impact of EDI initiatives.",
+    "abstract": "You are warmly invited to the launch of Lancaster's EDI Research Hub.\n\nThe launch will be opened by Professor Kendi Guantai, Dean for Culture and Inclusion. We will then hear from two speakers about exemplary EDI projects and practices taking place at Lancaster: Dr Sophie Alkhaled, Senior Lecturer in Entrepreneurship will introduce the 'Guide to Integrating Gender-Awareness and Inclusivity in Research and Innovation (hard copies will be available) from the H2020 Targeted MPI Project followed by Phil Cheeseman, Associate Director of Teaching and Engagement in the Library. \n\nFollowing this we will explore some of the initial aims for the Hub:\nWe will explore some initial aims for the Hub:\n- To connect expertise, research, practice and lived experience across the institution\n- To enhance existing EDI-related activity rather than duplicating current groups and networks\n- To create a cross-cutting initiative that engages academic and professional staff, PGRs, students and external partners \n- To facilitate knowledge sharing, collaboration and mentorship\n- To strengthen Lancaster's leadership in inclusive research culture and evidence-informed EDI practice\n- To build a stronger evidence base to evaluate and demonstrate the impact of EDI initiatives.",
     "themes": [
       "gold",
       "plum"
     ],
     "chair": "Professor Kendi Guantai, Dean Culture and Inclusion",
-    "speakers": "Panel TBD",
+    "speakers": "Dr Sophie Alkhaled, Senior Lecturer in Entrepreneurship and Director of the Academy for Gender Equality and Social Justice Research in Organisations and Phil Cheeseman, Associate Director of Teaching and Engagement in the Library.",
     "location": "Library Exhibitions and Events Space",
     "hybrid": false,
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4572204"
@@ -295,11 +295,11 @@ window.RCW_EVENTS = [
     "themes": [
       "coral"
     ],
-    "chair": "",
-    "speakers": "Olivia Carter",
+    "chair": "Olivia Carter, Assistant Organisational Developer, People and Organisational Effectiveness",
+    "speakers": "",
     "location": "POE Training Rooms (TBC)",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572197",
-    "hybrid": false
+    "hybrid": false,
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572197"
   },
   {
     "id": "thursday-s1",
@@ -394,11 +394,11 @@ window.RCW_EVENTS = [
     "slot": "Session Three",
     "time": "14:00–15:30",
     "title": "AI in Research: Ethics, Opportunities and Emerging Governance",
-    "abstract": "This interactive session brings together a range of perspectives on the rapidly evolving role of AI in research, from the foundations of large language models and institutional GenAI guidance to research management, and researchers’ experiences of using AI in various disciplines.\n\nThe session will use an interactive research carousel format. Participants will join small-group discussions led by the expert speaker, rotating between topics. \n\nCome along to share experiences, ask questions, and explore what responsible AI use in research might look like. All research students, academic and support staff are very welcome.",
+    "abstract": "This interactive session brings together perspectives from across the University to explore AI’s evolving role in research. Topics include:\n•\tAI strategy and governance: Shaping institutional approaches to responsible AI use.\n•\tTraining and practice: What stays ours? Exploring what growing AI capabilities mean for human researchers and their development.\n•\tAI in design research: Exploring its uses and possibilities.\n•\tPGR perspectives: Understanding research students’ experiences and use of AI.\n•\tAI in research funding applications: Navigating AI use and research funders’ requirements.\n\nThe session follows a research carousel format, with expert speakers hosting small-group discussions. Participants choose topics of interest and move between tables. There are opportunities to ask in-depth questions, share experiences and meet colleagues from across disciplines.\n\nWhether you already use AI or are still exploring its relevance to your work, join us to consider what responsible AI use in research could look like. All research students, academic staff, and professional services and support staff are warmly welcome.",
     "themes": [
       "teal"
     ],
-    "chair": "Dr Yingnian Tao, Senior Research Associate, Reimagining Research Practices",
+    "chair": "Dr Yingnian Tao, Senior Research Associate and Catriona Gold, Project Manager, Reimagining Research Practices",
     "speakers": "Professor Chris Nemeth, Co-Director Data Science and AI Institute; Dr Guillermo Perez Algorta, Senior Lecturer in Health Research, FHM; Mark Ryan, Associate Lecturer Research in LUMS; Dr Odette Dewhurst, Senior Research Development Manager, RES and Dr Joseph Lindley, Senior Research Fellow, School of Arts, FHASS",
     "location": "LT19, West Pavilion, Lancaster University Management School",
     "hybrid": false,
