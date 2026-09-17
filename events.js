@@ -209,7 +209,7 @@ window.RCW_EVENTS = [
     "chair": "Professor Kendi Guantai, Dean Culture and Inclusion",
     "speakers": "Dr Sophie Alkhaled, Senior Lecturer in Entrepreneurship and Director of the Academy for Gender Equality and Social Justice Research in Organisations and Phil Cheeseman, Associate Director of Teaching and Engagement in the Library.",
     "location": "Library Exhibitions and Events Space",
-    "hybrid": false,
+    "hybrid": true,
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4572204"
   },
   {
