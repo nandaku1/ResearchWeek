@@ -131,15 +131,15 @@ window.RCW_EVENTS = [
     "slot": "Lunchtime Session",
     "time": "12:00–13:00",
     "title": "Imagination Mixer",
-    "abstract": "",
+    "abstract": "Come along for chat and some lunch to meet our team and learn about the design-led, interdisciplinary research which takes place as part of the Imagination Lancaster Research Centre. We particularly welcome anyone already doing design-led research, researchers planning or running large interdisciplinary projects who could draw on Imagination's expertise in organising and managing complex collaborations, people who need to facilitate or organise co-design activities and participatory research, or anyone curious about how design research works.",
     "themes": [
       "lightblue"
     ],
     "chair": "",
     "speakers": "Dr Joe Lindley",
     "location": "A36 Imagination Lab, LICA",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574111",
-    "hybrid": false
+    "hybrid": false,
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574111"
   },
   {
     "id": "wednesday-s3",
