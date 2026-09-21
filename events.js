@@ -307,7 +307,7 @@ window.RCW_EVENTS = [
     "dayLabel": "Thursday 1st October",
     "slot": "Session One",
     "time": "09:30–11:00",
-    "title": "PGR Consultation",
+    "title": "PGR Open Forum",
     "abstract": "In this session Corinna Peniston-Bird will introduce her new role as Cross-Faculty Associate Dean for Postgraduate Studies.\n\nThere will also be opportunity to discuss some of the issues currently under consideration, from reasonable adjustments in vivas to clarity on what ‘writing up’ involves. \n\nThe session will also be an opportunity to hear priorities in the postgraduate community in an informal discussion.",
     "themes": [
       "plum"
