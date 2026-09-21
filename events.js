@@ -226,7 +226,7 @@ window.RCW_EVENTS = [
       "coral"
     ],
     "chair": "Professor Julia Gillen and Professor Uta Papen",
-    "speakers": "Dr Chris Gaffney and Dr Aurelie Sletchen",
+    "speakers": "Dr Chris Gaffney and Dr Aurelie Slechten",
     "location": "POE Training Rooms 1 & 2",
     "hybrid": false,
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4578941"
