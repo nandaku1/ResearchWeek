@@ -48,8 +48,8 @@ window.RCW_EVENTS = [
       "teal",
       "lightblue"
     ],
-    "chair": "",
-    "speakers": "Jess Shaw, Public Engagement Manager",
+    "chair": "Jess Shaw, Public Engagement Manager",
+    "speakers": "Dr Dayo Eseonu, Lecturer in Politics & Policy\nDr Sophie Patterson, Clinical Lecturer, Division of Health Research",
     "location": "Margaret Fell Lecture Theatre",
     "hybrid": true,
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4572212"
@@ -69,8 +69,8 @@ window.RCW_EVENTS = [
     "chair": "Professor Suzanne Ost (Academic Lead) or Dr Leonie Smith (ECR Lead)",
     "speakers": "Pam Forster, Project Manager of the British Academy's Early Career Researcher Network, North West North Wales (BA ECRN NWNW) Cluster",
     "location": "Library Exhibitions and Events Space",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574112",
-    "hybrid": false
+    "hybrid": true,
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4574112"
   },
   {
     "id": "monday-s4",
@@ -189,10 +189,10 @@ window.RCW_EVENTS = [
       "teal"
     ],
     "chair": "",
-    "speakers": "Jess Shaw, Public Engagement Manager, Dr Odette Dewhurst, Senior Research Development Manager, Chris Atkinson, Researcher Developer",
+    "speakers": "Jess Shaw, Public Engagement Manager, Dr Odette Dewhurst, Senior Research Development Manager, Chris Atkinson, Researcher Developer.\n\nDr Dayo Eseonu, Lecturer in Politics & Policy and Dr Tim Lamont, Research Fellow in Lancaster Environment Centre and The Pentland Centre for Sustainability in Business",
     "location": "Library Exhibitions and Events Space",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572199",
-    "hybrid": false
+    "hybrid": false,
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4572199"
   },
   {
     "id": "wednesday-s1",
@@ -201,13 +201,13 @@ window.RCW_EVENTS = [
     "slot": "Session One",
     "time": "09:30–11:00",
     "title": "Launch of the Lancaster University EDI Research Hub",
-    "abstract": "You are warmly invited to the launch of Lancaster's EDI Research Hub.\n\nThe launch will be opened by Professor Kendi Guantai, Dean for Culture and Inclusion. We will then hear from two speakers about exemplary EDI projects and practices taking place at Lancaster: Dr Sophie Alkhaled, Senior Lecturer in Entrepreneurship will introduce the 'Guide to Integrating Gender-Awareness and Inclusivity in Research and Innovation (hard copies will be available) from the H2020 Targeted MPI Project followed by Tom Morley, Open Access Manager in the Library. \n\nFollowing this we will explore some of the initial aims for the Hub:\nWe will explore some initial aims for the Hub:\n- To connect expertise, research, practice and lived experience across the institution\n- To enhance existing EDI-related activity rather than duplicating current groups and networks\n- To create a cross-cutting initiative that engages academic and professional staff, PGRs, students and external partners \n- To facilitate knowledge sharing, collaboration and mentorship\n- To strengthen Lancaster's leadership in inclusive research culture and evidence-informed EDI practice\n- To build a stronger evidence base to evaluate and demonstrate the impact of EDI initiatives.",
+    "abstract": "You are warmly invited to the launch of Lancaster's EDI Research Hub.\n\nThe launch will be opened by Professor Kendi Guantai, Dean for Culture and Inclusion. We will then hear from two speakers about exemplary EDI projects and practices taking place at Lancaster: Dr Sophie Alkhaled, Senior Lecturer in Entrepreneurship will introduce the 'Guide to Integrating Gender-Awareness and Inclusivity in Research and Innovation (hard copies will be available) from the H2020 Targeted MPI Project, Dr Sophie Standen, Learning Developer in FST followed by Tom Morley, Open Access Manager in the Library. \n\nFollowing this we will explore some of the initial aims for the Hub:\nWe will explore some initial aims for the Hub:\n- To connect expertise, research, practice and lived experience across the institution\n- To enhance existing EDI-related activity rather than duplicating current groups and networks\n- To create a cross-cutting initiative that engages academic and professional staff, PGRs, students and external partners \n- To facilitate knowledge sharing, collaboration and mentorship\n- To strengthen Lancaster's leadership in inclusive research culture and evidence-informed EDI practice\n- To build a stronger evidence base to evaluate and demonstrate the impact of EDI initiatives.",
     "themes": [
       "gold",
       "plum"
     ],
     "chair": "Professor Kendi Guantai, Dean Culture and Inclusion",
-    "speakers": "Dr Sophie Alkhaled, Senior Lecturer in Entrepreneurship and Director of the Academy for Gender Equality and Social Justice Research in Organisations and Tom Morley, Open Access Manager in the Library.",
+    "speakers": "Dr Sophie Alkhaled, Senior Lecturer in Entrepreneurship and Director of the Academy for Gender Equality and Social Justice Research in Organisations, Dr Sophie Standen, Learning Developer in FST and Tom Morley, Open Access Manager in the Library.",
     "location": "Library Exhibitions and Events Space",
     "hybrid": true,
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4572204"
