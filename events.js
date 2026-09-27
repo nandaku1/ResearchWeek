@@ -260,10 +260,10 @@ window.RCW_EVENTS = [
       "lightblue"
     ],
     "chair": "Dr Allan Discua-Cruz, Director Centre for Family Business, LUMS",
-    "speakers": "Bingbing Ge, Lecturer in Entrepreneurship and Strategy; Anis Alichi, Doctoral Research Associate in Entrepreneurship and Strategy and Professor Sarah Jack, Distinguished Professor Entrepreneurship and Strategy.",
+    "speakers": "Dr Bingbing Ge, Lecturer in Entrepreneurship and Strategy; Anis Alichi, Doctoral Research Associate in Entrepreneurship and Strategy and Professor Sarah Jack, Distinguished Professor Entrepreneurship and Strategy.",
     "location": "Library Exhibitions and Events Space",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4593728",
-    "hybrid": false
+    "hybrid": false,
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4593728"
   },
   {
     "id": "wednesday-30th-september-session-three",
@@ -365,10 +365,10 @@ window.RCW_EVENTS = [
       "coral"
     ],
     "chair": "",
-    "speakers": "",
+    "speakers": "Dr Emma Putland, FHASS Research Staff Network (ReSN)\nDr Ed Austin, Dr Paula Ribeiro De Anunciacao and Dr Fatameh Esfahani, FST Research Career and Development Group (RCAD)",
     "location": "POE Training Rooms 1 & 2",
-    "libcalUrl": "https://lancaster-uk.libcal.com/event/4580892",
-    "hybrid": false
+    "hybrid": false,
+    "libcalUrl": "https://lancaster-uk.libcal.com/event/4580892"
   },
   {
     "id": "thursday-s3",
@@ -411,13 +411,13 @@ window.RCW_EVENTS = [
     "slot": "Session Four",
     "time": "15:30–17:00",
     "title": "Talking Research: Examining Podcasts and Audio-Visual Research Outputs",
-    "abstract": "Learn about podcasting at Lancaster University from colleagues who talk on topics from spies to sustainability, career reflections and the sharing of research within our community. This session discusses podcasting as part of wider conversations, challenges and opportunities of the medium, as well as a tour of the podcasting suite in Health Innovation One. \n\nDr Vincent Gaine, Lecturer in Media and Film – host of The Spy with the Blood-Tinted Glasses \nhttps://open.spotify.com/show/4mty46JjXBMof9hxyCPNKh?si=9a9cae51f5b744bd\nhttps://podcasts.apple.com/gb/podcast/school-of-arts/id1891669165\nhttps://www.youtube.com/@SoALancasterUni\n\nSpeakers:\n- Paul Turner - host of Hosting Tomorrow (with Jan Bebbington, https://www.lancaster.ac.uk/pentland/resources/podcast/)\n- Dan Craddock – host of the 'Reimagining Research Culture episodes', part of the This is Lancaster podcast (https://www.lancaster.ac.uk/research/this-is-lancaster-podcast)\n- Leonie Smith – host of the British Academy's 'Confessions of an ECR' podcast - https://www.thebritishacademy.ac.uk/audio-video/confessions-of-an-early-career-researcher/. \n- Helen Nuttall - host of 'Drs Confess' - https://www.lancaster.ac.uk/psychology/about-us/news/new-sponsorship-for-research-culture-podcast-d…",
+    "abstract": "Learn about podcasting at Lancaster University from colleagues who talk on topics from spies to sustainability, career reflections and the sharing of research within our community. This session discusses podcasting as part of wider conversations, challenges and opportunities of the medium, as well as a tour of the podcasting suite in Health Innovation One. \n\nDr Vincent Gaine, Lecturer in Media and Film – host of The Spy with the Blood-Tinted Glasses \nhttps://open.spotify.com/show/4mty46JjXBMof9hxyCPNKh?si=9a9cae51f5b744bd\nhttps://podcasts.apple.com/gb/podcast/school-of-arts/id1891669165\nhttps://www.youtube.com/@SoALancasterUni\n\nSpeakers:\n- Paul Turner - host of Hosting Tomorrow (with Professor Jan Bebbington, https://www.lancaster.ac.uk/pentland/resources/podcast/)\n- Dr Dan Craddock – host of the 'Reimagining Research Culture episodes', part of the This is Lancaster podcast (https://www.lancaster.ac.uk/research/this-is-lancaster-podcast)\n- Dr Leonie Smith – host of the British Academy's 'Confessions of an ECR' podcast - https://www.thebritishacademy.ac.uk/audio-video/confessions-of-an-early-career-researcher/. \n- Dr Helen Nuttall - host of 'Drs Confess' - https://www.lancaster.ac.uk/psychology/about-us/news/new-sponsorship-for-research-culture-podcast-d…",
     "themes": [
       "teal",
       "lightblue"
     ],
     "chair": "Dr Vincent Gaine, Lecturer in Media and Film - host of The Spy with the Blood-Tinted Glasses",
-    "speakers": "Paul Turner - host of 'Hosting Tomorrow'; Dan Craddock – host of the 'Reimagining Research Culture episodes', 'This is Lancaster' podcast; Leonie Smith – host of the British Academy's 'Confessions of an ECR' podcast and Helen Nuttall - host of 'Drs Confess'.",
+    "speakers": "Paul Turner - host of 'Hosting Tomorrow'; Dr Dan Craddock – host of the 'Reimagining Research Culture episodes', 'This is Lancaster' podcast; Dr Leonie Smith – host of the British Academy's 'Confessions of an ECR' podcast and Dr Helen Nuttall - host of 'Drs Confess'.",
     "location": "A14 Innovation Lab, Health Innovation One",
     "hybrid": false,
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4574467"
