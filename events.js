@@ -136,7 +136,7 @@ window.RCW_EVENTS = [
       "lightblue"
     ],
     "chair": "",
-    "speakers": "Dr Joe Lindley",
+    "speakers": "Dr Joseph Lindley and Dr Naomi Jacobs",
     "location": "A36 Imagination Lab, LICA",
     "hybrid": false,
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4574111"
@@ -411,13 +411,13 @@ window.RCW_EVENTS = [
     "slot": "Session Four",
     "time": "15:30–17:00",
     "title": "Talking Research: Examining Podcasts and Audio-Visual Research Outputs",
-    "abstract": "Learn about podcasting at Lancaster University from colleagues who talk on topics from spies to sustainability, career reflections and the sharing of research within our community. This session discusses podcasting as part of wider conversations, challenges and opportunities of the medium, as well as a tour of the podcasting suite in Health Innovation One. \n\nDr Vincent Gaine, Lecturer in Media and Film – host of The Spy with the Blood-Tinted Glasses \nhttps://open.spotify.com/show/4mty46JjXBMof9hxyCPNKh?si=9a9cae51f5b744bd\nhttps://podcasts.apple.com/gb/podcast/school-of-arts/id1891669165\nhttps://www.youtube.com/@SoALancasterUni\n\nSpeakers:\n- Paul Turner - host of Hosting Tomorrow (with Professor Jan Bebbington, https://www.lancaster.ac.uk/pentland/resources/podcast/)\n- Dr Dan Craddock – host of the 'Reimagining Research Culture episodes', part of the This is Lancaster podcast (https://www.lancaster.ac.uk/research/this-is-lancaster-podcast)\n- Dr Leonie Smith – host of the British Academy's 'Confessions of an ECR' podcast - https://www.thebritishacademy.ac.uk/audio-video/confessions-of-an-early-career-researcher/. \n- Dr Helen Nuttall - host of 'Drs Confess' - https://www.lancaster.ac.uk/psychology/about-us/news/new-sponsorship-for-research-culture-podcast-d…",
+    "abstract": "Learn about podcasting at Lancaster University from colleagues who talk on topics from spies to sustainability, career reflections and the sharing of research within our community. This session discusses podcasting as part of wider conversations, challenges and opportunities of the medium, as well as a tour of the podcasting suite in Health Innovation One. \n\nDr Vincent Gaine, Lecturer in Media and Film – host of The Spy with the Blood-Tinted Glasses \nhttps://open.spotify.com/show/4mty46JjXBMof9hxyCPNKh?si=9a9cae51f5b744bd\nhttps://podcasts.apple.com/gb/podcast/school-of-arts/id1891669165\nhttps://www.youtube.com/@SoALancasterUni\n\nSpeakers:\n- Paul Turner - host of Transforming Tomorrow (with Professor Jan Bebbington, https://www.lancaster.ac.uk/pentland/resources/podcast/)\n- Dr Dan Craddock – host of the 'Reimagining Research Culture episodes', part of the This is Lancaster podcast (https://www.lancaster.ac.uk/research/this-is-lancaster-podcast)\n- Dr Leonie Smith – host of the British Academy's 'Confessions of an ECR' podcast - https://www.thebritishacademy.ac.uk/audio-video/confessions-of-an-early-career-researcher/. \n- Dr Helen Nuttall and Dr Kate Slade - hosts of 'Drs Confess' - https://www.lancaster.ac.uk/psychology/about-us/news/new-sponsorship-for-research-culture-podcast-d…",
     "themes": [
       "teal",
       "lightblue"
     ],
     "chair": "Dr Vincent Gaine, Lecturer in Media and Film - host of The Spy with the Blood-Tinted Glasses",
-    "speakers": "Paul Turner - host of 'Hosting Tomorrow'; Dr Dan Craddock – host of the 'Reimagining Research Culture episodes', 'This is Lancaster' podcast; Dr Leonie Smith – host of the British Academy's 'Confessions of an ECR' podcast and Dr Helen Nuttall - host of 'Drs Confess'.",
+    "speakers": "Paul Turner - host of 'Hosting Tomorrow'; Dr Dan Craddock – host of the 'Reimagining Research Culture episodes', 'This is Lancaster' podcast; Dr Leonie Smith – host of the British Academy's 'Confessions of an ECR' podcast and Dr Helen Nuttall and Dr Kate Slade - hosts of 'Drs Confess'.",
     "location": "A14 Innovation Lab, Health Innovation One",
     "hybrid": false,
     "libcalUrl": "https://lancaster-uk.libcal.com/event/4574467"
